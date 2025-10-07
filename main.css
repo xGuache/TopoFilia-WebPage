@@ -1,0 +1,45 @@
+.Container{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%
+}
+
+.UnderConstruction{
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.Blur{
+    background-color:rgba(116, 88, 42, 0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index:2;
+}
+
+.AdobeCaslon_pro {
+    font-family: "adobe-caslon-pro", serif;
+    font-weight: 6  00; /*Bold:700 SemiBold:600*/
+    font-style: italic;
+}
+
+.Blur p{
+    font-size: 100px;
+    color: #AF8455;
+    -webkit-text-stroke:1px rgba(197, 212, 218, 1);
+    text-stroke: 1px rgba(197, 212, 218, 1);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
+}
