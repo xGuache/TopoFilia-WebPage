@@ -36,7 +36,8 @@
 }
 
 .Blur p{
-    font-size: 100px;
+    text-align: center;
+    font-size: clamp(50px, 8vw + 1rem ,100px);
     color: #AF8455;
     -webkit-text-stroke:1px rgba(197, 212, 218, 1);
     text-stroke: 1px rgba(197, 212, 218, 1);
