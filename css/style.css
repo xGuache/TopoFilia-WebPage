@@ -54,6 +54,7 @@ html, body {
     white-space: nowrap;
     scrollbar-width: none;
     background-image: url(/Img/Pared\ del\ mural\ completo.jpg);
+    pointer-events: all;    
     -webkit-overflow-scrolling: touch
 
 }
@@ -99,7 +100,7 @@ html, body {
       box-sizing: border-box;
       justify-content: space-between;
       transform: translateY(-50%);
-      pointer-events: auto;
+      pointer-events: none;
       z-index: 10;
     }
 
@@ -119,6 +120,7 @@ background: linear-gradient(to right, transparent, rgba(255,255,255,0.2));
       color: rgb(170, 154, 4);
       font-size: 2rem;
       padding: 0.5rem 1rem;
+      pointer-events: auto;
       touch-action: manipulation;
 }
 
