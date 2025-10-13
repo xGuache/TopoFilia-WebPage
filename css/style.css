@@ -54,8 +54,6 @@ html, body {
     white-space: nowrap;
     scrollbar-width: none;
     background-image: url(/Img/Pared\ del\ mural\ completo.jpg);
-    touch-action: manipulation;
-    pointer-events: auto;
     -webkit-overflow-scrolling: touch
 
 }
@@ -70,8 +68,6 @@ html, body {
     scroll-snap-align: center;
     height: 100vh;
     width: auto;
-    touch-action: manipulation;
-    pointer-events: auto;
 }
 
 .slide img {
