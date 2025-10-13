@@ -54,6 +54,8 @@ html, body {
     white-space: nowrap;
     scrollbar-width: none;
     background-image: url(/Img/Pared\ del\ mural\ completo.jpg);
+    touch-action: manipulation;
+
 }
 
 .slide{
