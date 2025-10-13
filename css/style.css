@@ -118,13 +118,20 @@ background: linear-gradient(to right, transparent, rgba(255,255,255,0.2));
       height: 100vh;
       backdrop-filter: blur(5px);
       border-radius: 10px;
+      opacity: 0.8;
       border:none;
       color: white;
       font-size: 2rem;
       padding: 0.5rem 1rem;
       cursor: pointer;
       pointer-events: all;
+      touch-action: manipulation;
 }
+
+b.controls button:hover, button:active,button:focus {
+  opacity: 1;
+}
+
 
 @media (max-width: 888px){
  .Slider{
@@ -134,4 +141,11 @@ background: linear-gradient(to right, transparent, rgba(255,255,255,0.2));
     width: calc(400vw + (100vh - 100vw))!important;
  }
 
+}
+
+@media (max-width: 888px) {
+ .controls button {
+    width: 100% !important;
+    font-size: 1rem !important;
+  }
 }
