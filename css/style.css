@@ -55,6 +55,7 @@ html, body {
     scrollbar-width: none;
     background-image: url(/Img/Pared\ del\ mural\ completo.jpg);
     touch-action: manipulation;
+    pointer-events: all;
 
 }
 
@@ -75,8 +76,6 @@ html, body {
   width: auto;           /* mantiene proporción horizontal */
   object-fit: cover;     /* recorta lo que sobra horizontalmente */
   display: block;
-
-
 }
 
 
@@ -85,8 +84,8 @@ html, body {
     box-sizing: border-box;
     top: 0px;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 
