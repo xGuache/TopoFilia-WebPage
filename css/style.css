@@ -65,7 +65,6 @@ html, body {
 }
 
 .slider_Container img{
-    max-inline-size: 100%;
     min-height: 100vh;
     height: 100%;
     width: auto;
@@ -136,11 +135,10 @@ b.controls button:hover, button:active,button:focus {
 
 @media (max-width: 888px){
  .Slider{
-    height:2%!important;
-    width: auto;
+    height:10%!important;
  }
  .In-Slider{
-    height: 2%!important;
+    width: calc(400vw + (100vh - 100vw))!important;
  }
 
 }
@@ -148,6 +146,6 @@ b.controls button:hover, button:active,button:focus {
 @media (max-width: 888px) {
  .controls button {
     width: 20% !important;
-    font-size: 2rem !important;
+    font-size: 1rem !important;
   }
 }
