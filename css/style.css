@@ -8,11 +8,6 @@ html, body {
   padding: 0;
   height: 100%;
   overflow: hidden; /* evita scroll durante la carga */
-  background: none;
-  background-image: url(/Img/Pared\ del\ mural\ completo.jpg);
-  background-size: cover;       /* llena toda la pantalla */
-  background-position: center;  /* centrada */
-  background-repeat: no-repeat; /* sin repetir */
 }
 
 #main {
@@ -25,7 +20,10 @@ html, body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: black;
+  background-image: url(/Img/Pared\ del\ mural\ completo.jpg);
+  background-size: cover;       /* llena toda la pantalla */
+  background-position: center;  /* centrada */
+  background-repeat: no-repeat; /* sin repetir */
   display: flex;
   justify-content: center;
   align-items: center;
