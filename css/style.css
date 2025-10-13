@@ -20,10 +20,7 @@ html, body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url(/Img/Pared\ del\ mural\ completo.jpg);
-  background-size: cover;       /* llena toda la pantalla */
-  background-position: center;  /* centrada */
-  background-repeat: no-repeat; /* sin repetir */
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,7 +128,7 @@ background: linear-gradient(to right, transparent, rgba(255,255,255,0.2));
 
 @media (max-width: 888px){
  .Slider{
-    height:10vh!important;
+    height:50%!important;
  }
  .In-Slider{
     width: calc(400vw + (100vh - 100vw))!important;
