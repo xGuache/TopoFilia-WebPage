@@ -55,7 +55,7 @@ html, body {
     scrollbar-width: none;
     background-image: url(/Img/Pared\ del\ mural\ completo.jpg);
     touch-action: manipulation;
-    pointer-events: all;
+    pointer-events: auto;
     -webkit-overflow-scrolling: touch
 
 }
@@ -71,7 +71,7 @@ html, body {
     height: 100vh;
     width: auto;
     touch-action: manipulation;
-    pointer-events: all;
+    pointer-events: auto;
 }
 
 .slide img {
@@ -103,7 +103,8 @@ html, body {
       box-sizing: border-box;
       justify-content: space-between;
       transform: translateY(-50%);
-      pointer-events: all;
+      touch-action: manipulation;
+      pointer-events: auto;
       z-index: 10;
     }
 
