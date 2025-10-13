@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Reproductor</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='reproductor.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <main>
+        <img class="item" src="/Img/01_MuralCompleto.jpg" alt="Musicos">
+        
+        <div id="MP3" class="item --MP3-bg">
+
+            <audio src="audio">
+                <source src="" type="">
+            </audio>
+            <h2>Title-Track</h2>
+            
+            <div id="Controls" class="--Controls-st">
+                
+                <input class="__slider" type="range" velue="0" Id="Progress">
+                <div class="reproducer">
+                <button id="Previous">
+                    <img src="Elements/Regresar SONIDO.png" alt="">
+                </button>
+                
+                <button id="Play-Pause">
+                    <img id="Play_Icon"  src="Elements/Reproducir SONIDO.png" alt="">
+                </button>
+
+                <button id="Next">
+                    <img src="Elements/Adelantar SONIDO.png" alt="">
+                </button>
+                </div>
+            </div>
+
+            <div id="Track_List">
+                <ul class="ListItems">
+                    <li class="track">Track1</li>
+                    <li class="track">Track2</li>
+                    <li class="track">Track3</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+</html>

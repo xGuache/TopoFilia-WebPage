@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrusel Panorámico</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #111;
+      color: #fff;
+    }
+
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scrollbar-width: none; /* Firefox */
+    }
+
+    .carousel::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
+    }
+
+    .carousel img {
+      flex: 0 0 auto;
+      width: 100vw;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    .controls button {
+      background: rgba(0,0,0,0.5);
+      border: none;
+      color: white;
+      font-size: 2rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      pointer-events: all;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carousel-container">
+    <div class="carousel" id="carousel">
+      <img src="panorama1.jpg" alt="Sección 1">
+      <img src="panorama2.jpg" alt="Sección 2">
+      <img src="panorama3.jpg" alt="Sección 3">
+      <!-- Agrega más imágenes si lo deseas -->
+    </div>
+    <div class="controls">
+      <button onclick="scrollCarousel(-1)">⟨</button>
+      <button onclick="scrollCarousel(1)">⟩</button>
+    </div>
+  </div>
+
+  <script>
+    const carousel = document.getElementById('carousel');
+
+    function scrollCarousel(direction) {
+      const scrollAmount = window.innerWidth;
+      carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });}
+  </script>
+
+</body>
+</html>

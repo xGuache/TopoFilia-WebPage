@@ -1,0 +1,157 @@
+body{
+    background-color: aqua;
+}
+
+
+main{
+    position: relative;
+}
+
+main .item{
+    border-radius: 20px;
+    border-style: solid;
+    border: black;
+}
+
+
+
+#MP3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 10;
+    
+}
+
+.--MP3-bg{
+    min-width: 400px;
+    border-style: none;
+    border-width: 2px;
+    border-radius: 20px;
+    background-color:rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    
+}
+
+.__slider {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #b98f05; /* Grey background */
+    outline: none; /* Remove outline */
+    height: 6px;
+    border-radius: 10px;
+    border-style:solid;
+    border-color: #644e06; 
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    
+
+}
+ 
+.__slider :hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+.__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: url('Elements/Ubicación\ del\ sonido.png') no-repeat center center; 
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+#Controls{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.reproducer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.--Controls-st{
+    background-color: rgba(235, 183, 42, 0.1);
+    backdrop-filter: blur(5px);
+    border-style: solid;
+    border-color: rgba(134, 100, 6, 0.4);
+    border-radius: 10px;
+}
+
+
+.reproducer button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-appearance: none;
+    opacity: 0.9;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+        
+}
+
+/*#Play-Pause{
+            width: 50px;
+            height: 50px;
+         }*/
+
+#Controls img{
+    background-color: #644e06;
+    border-style: solid;
+    border-color: #b98f05;
+    border-radius: 50px;
+    
+}
+
+#Controls button:hover{
+    opacity: 2;
+}
+
+#Controls button:active{
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    transform: translateY(1px);
+}
+
+#Track_List .ListItems{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    flex: 1 1 auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+    list-style-type: none; 
+    padding: 5px;
+    gap: 10px;
+}
+
+.ListItems .track{
+    border-radius: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
