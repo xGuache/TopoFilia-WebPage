@@ -1,11 +1,17 @@
-indow.addEventListener('load', () => {
-      const loader = document.getElementById('loader');
-      const contenido = document.getElementById('contenido');
+//Pantalla de cARGA
 
-      // Oculta el loader y muestra el contenido
-      loader.style.display = 'none';
-      contenido.style.visibility = 'visible';
-      document.body.style.overflow = 'auto';
+    const MIN_TIEMPO = 3000; // mínimo 3 segundos
+    const inicio = Date.now();
+
+    window.addEventListener('load', () => {
+      const tiempoPasado = Date.now() - inicio;
+      const restante = Math.max(0, MIN_TIEMPO - tiempoPasado);
+
+      setTimeout(() => {
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('main').style.visibility = 'visible';
+        document.body.style.overflow = 'auto';
+      }, restante);
     });
 
     
