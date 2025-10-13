@@ -99,7 +99,6 @@ html, body {
       box-sizing: border-box;
       justify-content: space-between;
       transform: translateY(-50%);
-      touch-action: manipulation;
       pointer-events: auto;
       z-index: 10;
     }
@@ -115,7 +114,7 @@ background: linear-gradient(to right, transparent, rgba(255,255,255,0.2));
       height: 100vh;
       backdrop-filter: blur(5px);
       border-radius: 10px;
-      opacity: 0.8;
+      opacity: 0.6;
       border:none;
       color: rgb(170, 154, 4);
       font-size: 2rem;
