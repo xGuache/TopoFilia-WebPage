@@ -1,8 +1,9 @@
 header{
     position: fixed;
-    z-index: 1060;
     right: 0;
     top:0;
+    transform: translateX(+50vw);
+    z-index: 1040;
 }
 
 
@@ -22,7 +23,6 @@ header{
 }
 
 .mostrar {
-    
     transform: translateX(0);
 }
 

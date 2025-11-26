@@ -3,7 +3,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10vh 90vh 0px;
+    grid-template-rows: 15vh 85vh 0px;
     
     grid-template-areas:
 
@@ -44,7 +44,7 @@
 
 .Container-Gallery{
     background:pink;
-    height: 90vh; 
+    height: 100%; 
     display: flex;
 }
 
