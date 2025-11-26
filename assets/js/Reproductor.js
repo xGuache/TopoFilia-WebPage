@@ -56,8 +56,6 @@ function manejarClickHotspot(event) {
 
     
     const DOMtrackid = event.currentTarget.dataset.trackId;
-    
-    event.stopPropagation();
 
     AlbumInfo = TrackList.find(item => {
 
@@ -74,7 +72,7 @@ function manejarClickHotspot(event) {
         cargaContenidoTexto(AlbumInfo);
 
         PopMP3.classList.add('mostrar-mp3');
-
+        event.stopPropagation();
     } else {
         console.error(`Error: No se encontró información para el ID: ${DOMtrackid}`);
     }
@@ -291,13 +289,19 @@ function cargaContenidoTexto(AlbumInfo) {
 };
 
 
+visualizer.addEventListener('click', (e) => {
+    e.stopPropagation();
+    console.log("Clic dentro del visualizer: Propagación detenida para el cierre externo.");
+});
 
 
 document.addEventListener('click', (e) => {
-    // Si el popover está activo Y el click fue fuera del popover y fuera de un trigger
+
     if (PopMP3.classList.contains('mostrar-mp3') && !visualizer.contains(e.target))  {
         PopMP3.classList.remove('mostrar-mp3');
+        
         carpeta.classList.remove('mostrar-mp3')
+
         PauseTrack();
         CurrentTrackIndex = 0;
         AlbumInfo = null;
@@ -306,13 +310,18 @@ document.addEventListener('click', (e) => {
     if (text_popup.classList.contains('mostrar-mp3') && !text_popup.contains(e.target))  {
         text_popup.classList.remove('mostrar-mp3');
     }
+
+    e.stopPropagation()
 });
 
 
-carpeta.addEventListener('click', (e) => {   
-        e.stopPropagation()
+carpeta.addEventListener('click', (e) => {  
+        e.stopPropagation(); 
         text_popup.classList.add('mostrar-mp3');
     });
+
+
+
     
 /*window.addEventListener('resize', () => {
         
