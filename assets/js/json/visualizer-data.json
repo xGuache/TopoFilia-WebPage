@@ -1,3 +1,6 @@
+
+
+
 [
   {
     "id": "1Y2-ERASMO_JUAN_DE_LA_CRUZ_CHAPARRAL_1",
@@ -36,7 +39,7 @@
   {
     "id": "1Y2-ERASMO_JUAN_DE_LA_CRUZ_CHAPARRAL_3",
     "portada_url": "/assets/img/Overlaped/3_2-ERASMO_JUAN_DE_LA_CRUZ_CHAPARRAL (3).webp",
-    "almbum_title":  "JUAN Y ERAZMO",
+    "almbum_title":  "CHAPARRAL",
     "info_text": [] ,
     "tracks": [
       {
@@ -55,7 +58,7 @@
     "almbum_title":  "LOS NEVADOS",
     "info_text": [{
       "text_title":"Las montañas",
-      "text_author":" autor:  Marisela",
+      "text_author":"Autor:  Marisela",
       "text_content":"Las montañas de Sumapaz se despiertan entre las nubes y nieblas,con el soplo del viento.  Entre ellas se esconden infinidades de historias de nuestros antepasados, quienes las atravesaron para comercializar sus alimentos como es la papa, maíz y calabaza producidos con sus esfuerzos y sudor.\nsalto Grandiosas montañas, donde nacen nuestros ríos y quedabas, refugio de diversos árboles y animales como el oso de anteojos, el curí, la ardilla, la pava, la gallineta y el águila de páramo,  las montañas guardan los misterios y la fuerza de la naturaleza, hermosas montañas que nos hacen sentir orgullosos de pertenecer a este territorio Sumapaceño."      }],
       "tracks": [
       {
@@ -75,31 +78,31 @@
 "info_text": [] ,
 "tracks": [
       {
-        "title": "4. Rejo_cómo se hacía",
+        "title": "Rejo cómo se hacía",
         "track_src": "/assets/media/audio/4-REJO/4. Rejo_cómo se hacía.mp3"
       },
       {
-        "title": "4. Rejo_Juete",
+        "title": "Rejo Juete",
         "track_src": "/assets/media/audio/4-REJO/4. Rejo_Juete.mp3"
       },
       {
-        "title": "4. Rejo_Lo que recuerdo proceso",
+        "title": "Rejo Lo que recuerdo proceso",
         "track_src": "/assets/media/audio/4-REJO/4. Rejo_Lo que recuerdo proceso.mp3"
       },
       {
-        "title": "4. Rejo_Proceso_Miriam Mampira",
+        "title": "Rejo Proceso Miriam Mampira",
         "track_src": "/assets/media/audio/4-REJO/4. Rejo_Proceso_Miriam Mampira.mp3"
       },
       {
-        "title": "4. Rejo_Quiénes lo usaban",
+        "title": "Rejo Quiénes lo usaban",
         "track_src": "/assets/media/audio/4-REJO/4. Rejo_Quiénes lo usaban.mp3"
       },
       {
-        "title": "4. Rejo_Reliquia",
+        "title": "Rejo Reliquia",
         "track_src": "/assets/media/audio/4-REJO/4. Rejo_Reliquia.mp3"
       },
       {
-        "title": "4.-Rejo (Estrella Guerrero)",
+        "title": "Rejo (Estrella Guerrero)",
         "track_src": "/assets/media/audio/4-REJO/4.-Rejo (Estrella Guerrero).mp3"
       },
       {
@@ -131,7 +134,7 @@
   {
     "id": "5-FAMILIAS_CAMPESINAS",
     "portada_url": "/assets/img/Overlaped/6_5-FAMILIAS_CAMPESINAS.webp",
-    "almbum_title":  "1",
+    "almbum_title":  "FAMILIAS CAMPESINAS",
 "info_text": [] ,
 "tracks": [
       {
@@ -158,12 +161,12 @@
     "almbum_title":  "LAS CASAS DE BAHAREQUE",
 "info_text": [{
   "text_title":"Casas campesinas",
-      "text_author":" autor:  Sofía",
+      "text_author":"Autor:  Sofía",
       "text_content":"Mi casa\n\nMi casa, el fogón de las historias\n\nMi suelo, la trocha de barro \n\nMi techo, el cielo de niebla\n\nMi ventana, el amanecer que alumbra la mirada \n\nMi umbral, el vacío entre  los chilcos\n\nMi muro, las montañas de bahareque\n\nMi escalera, los peldaños del relieve\n\nMi jardín, el vuelo del colibrí, la huella del venado, la geometría de las rocas\n\n\n\nMi reloj, la metamorfosis del horizonte\n\nMi espejo, la laguna de estrellas\n\nMi aljibe, la evaporación de la quebrada\n\nMi cobija, el tiritar del viento\n\nMi almohada, el sueño de futuro\n\n\n\nMi cuerpo, casa que camina el tiempo\n\nMi casa, el páramo\n\n"
   }] ,
 "tracks": [
       {
-        "title": "6.1. La Casa de Bahareque - Madera y Paja (Estrella Guerrero)",
+        "title": "La Casa de Bahareque - Madera y Paja",
         "track_src": "/assets/media/audio/6-CASA DE BAHAREQUE/6.1. La Casa de Bahareque - Madera y Paja (Estrella Guerrero).mp3"
       }
     ]
@@ -198,20 +201,20 @@
     "almbum_title":  "LA MUSICA",
 "info_text": [{
   "text_title":"La música",
-          "text_author":" autor:  Brayan Rojas",
+          "text_author":"Autor:  Brayan Rojas",
           "text_content":"Buenas tardes, mi nombre es Brayan Rojas y quiero compartirles que conocí la música gracias a las actividades que se realizaban en la localidad de Sumapaz. Fue en esos espacios donde descubrí que la música no solo es sonido, sino también una forma de expresión, de unión y de identidad entre las personas.\nsalto A través de cada clase aprendí a valorar el arte, la disciplina y el trabajo en equipo. Pero, sobre todo, comprendí que la música tiene el poder de transformar, de conectar corazones y de mantener vivas nuestras tradiciones.\nsalto Gracias a esos talleres formamos un grupo musical llamado “Las Caicas”, con el cual tuvimos la oportunidad de presentarnos en diferentes escenarios de Bogotá. Aunque con el tiempo, por motivos de estudio, tuvimos que separarnos, me alegra ver que en los últimos años han surgido nuevos grupos musicales conformados por jóvenes de la localidad, quienes siguen fortaleciendo y manteniendo vivas estas tradiciones que tanto nos representan"
           }] ,
 "tracks": [
       {
-        "title": "12.Saludo a los Pueblos, Los Fiesteros de Sumapaz_17 578649 35772_104949",
+        "title": "Saludo a los Pueblos - Los Fiesteros de Sumapaz",
         "track_src": "/assets/media/audio/8-MUSICA/12.Saludo a los Pueblos, Los Fiesteros de Sumapaz_17 578649 35772_104949.mp3"
       },
       {
-        "title": "2. Canción Juan de la Cruz Varela ()",
+        "title": "Canción Juan de la Cruz Varela",
         "track_src": "/assets/media/audio/8-MUSICA/2. Canción Juan de la Cruz Varela ().mp3"
       },
       {
-        "title": "8. Músicos (Brayan Pulido enano).wav",
+        "title": "Músicos",
         "track_src": "/assets/media/audio/8-MUSICA/8. Músicos (Brayan Pulido enano).wav"
       },
       {
@@ -219,7 +222,7 @@
         "track_src": "/assets/media/audio/8-MUSICA/Experiencia Dago.MP3"
       },
       {
-        "title": "experiencia DAGO2",
+        "title": "Experiencia Dago 2",
         "track_src": "/assets/media/audio/8-MUSICA/experiencia DAGO2.MP3"
       }
     ]
@@ -230,13 +233,13 @@
     "almbum_title":  "LA EDUCACION",
     "info_text": [{
           "text_title":"La Escuela",
-          "text_author":" autor:  Elkin Giovany Romero Romero",
+          "text_author":"Autor:  Elkin Giovany Romero Romero",
           "text_content":"En lo personal, la escuela logró impactar mi vida, ya que representó un giro total desde el momento en que ingresé. Estudié en cuatro escuelas diferentes, y en cada una de ellas pude aprender muchas cosas. Aunque los tiempos en los que estudié fueron distintos, también lo fue mi madurez.\n\n Desde muy niño, como es lo normal hoy, inicie mi proceso de educación en la escuela Raizal. No me gustaba ir porque que me tocaba caminar y sentía miedo; imagino que eso es normal cuando nos enfrentamos a lo desconocido. Más adelante, cursé primero y segundo en la escuela de Laguna Verde, donde empecé a asociarme más con los demás niños y descubrí que las personas tienen esa capacidad natural de socializar y hacer amigos.\n\n A partir de tercero y hasta noveno estudié en la escuela Adelina Gutierrez. Fue allí donde noté que esta escuela, ubicada en la vereda Betania, llevaba el nombre de una mujer. Pero, ¿quién era esa mujer? Con el tiempo aprendí que fue una de las primeras docentes de la vereda y, además, la donadora de los terrenos donde se construyó la escuela. Allí comprendí que muchos de los procesos de escuelas fueron desarrollados y forjados a pulso por la organización y el esfuerzo de las comunidades.\nsalto En perspectiva, esta historia se remonta a mis abuelos, quienes me contaron parte de este proceso, las dificultades que enfrentaron para construir las escuelas y cómo, a pesar de todo, el sueño de acceder a la educación nunca decayó. Gracias a esa perseverancia, se pudieron levantar varias escuelas en diferentes veredas.\nsalto Mi abuelo me contó cómo, siendo muy pequeño, ayudó a construir la escuela de Raizal, aquella que fue mi primera experiencia escolar, y cómo más adelante se construyó la escuela de Peñalisa. A través de todas estas historias, siento la obligación de que no sean olvidadas, sino recordadas, ya que gracias a ellos pude estudiar y tener esa experiencia tan maravillosa."
           }] ,
     "tracks": [
           {
-            "title": "9.Educacion Adelina Gutierrez.mp4",
-            "track_src": "/assets/media/audio/9-EDUCACIÓN-ESCUELAS/9.Educacion Adelina Gutierrez.mp4"
+            "title": "Educacion Adelina Gutierrez",
+            "track_src": "/assets/media/audio/9-EDUCACIÓN-ESCUELAS/9.Educacion Adelina Gutierrez.mp3"
           },
           {
             "title": "Adelina Gutierrez",
@@ -286,7 +289,7 @@
     "almbum_title":  "LOS VENADOS",
     "info_text": [{
       "text_title":"Venado de cola blanca",
-      "text_author":" autor:  Maicol Rojas",
+      "text_author":"Autor:  Maicol Rojas",
       "text_content":"Hola… mi nombre es Maicol Rojas y hoy les voy a contar una historia sobre el venado cola blanca.\n\n Recuerdo que cuando era niño, mi papá me contó que un día un venado pasó muy cerca de la casa. En ese entonces, los campesinos querían cazarlo —y mi papá no era la excepción. Me dijo que los perros de la casa vieron al venado y empezaron a perseguirlo. Pero el venado era demasiado rápido, incluso para los perros…Eso sorprendía a todos los campesinos.\n\n Desde pequeño, siempre he admirado a estos animales que viven en el páramo, y más aún a esos que ahora son tan difíciles de ver… o de oír, aquí en Sumapaz. Cuando crecí y pensé en estas criaturas tan importantes, también surgió en mí un interés en “dispararles”, pero de una forma diferente: dispararles con una cámara. Tuve la oportunidad de ir a otro páramo: el páramo de Chingaza, donde todavía podemos encontrar criaturas que tal vez ya no podamos volver a ver en Sumapaz.\nsalto En una de las caminatas que hice allá, todos vieron a un venado a lo lejos, menos yo, porque estaba distraído mirando unas flores. Pero más tarde, ese mismo día, vi a una pareja de venados cola blanca, muy cerca. Y entonces, sí… pude dispararles, o mejor dicho, pude fotografiarlos. Después de eso, no podía entender cómo alguien podía cazara una criatura como esa, o a cualquier ser vivo del páramo."
       }] ,
 "tracks": [
@@ -362,40 +365,40 @@
     "almbum_title":  "LA ESCOPETA",
 "info_text": [{
   "text_title":"El fusil",
-      "text_author":" autor:  Katerin Ramírez León",
+      "text_author":"Autor:  Katerin Ramírez León",
       "text_content":"Sí, soy yo, el fusil. El que arrebata vidas, el que también protege vidas. Mi labor ha sido estigmatizada, cuando junto a la guerrillada campesina salimos a defender nuestras tierras porque nos asesinaban cuando las trabajábamos y no queríamos arrodillarnos, no ante el surco, sino ante el terrateniente. No soy un símbolo de muerte, soy un símbolo de resistencia y defensa de la vida. La persecución y la violencia obligaron a que los y las campesinas, con las manos callosas de tanto labrar la tierra, me tomaran, y con una bala buscaran acabar con la injusticia y establecer la paz y la dignidad."
 }] ,
 "tracks": [
       {
-        "title": "14. Escopeta_Accidentes.wav",
+        "title": "Escopeta Accidentes",
         "track_src": "/assets/media/audio/14-ESCOPETA/14. Escopeta_Accidentes.wav"
       },
       {
-        "title": "14. Escopeta_Desafortunadamente mataron a mansalva.wav",
+        "title": "Escopeta Desafortunadamente mataron a mansalva",
         "track_src": "/assets/media/audio/14-ESCOPETA/14. Escopeta_Desafortunadamente mataron a mansalva.wav"
       },
       {
-        "title": "14. Escopeta_Eso es lo que yo recuerdo.wav",
+        "title": "Escopeta Eso es lo que yo recuerdo",
         "track_src": "/assets/media/audio/14-ESCOPETA/14. Escopeta_Eso es lo que yo recuerdo.wav"
       },
       {
-        "title": "14. Escopeta_Historia.wav",
+        "title": "Escopeta Historia",
         "track_src": "/assets/media/audio/14-ESCOPETA/14. Escopeta_Historia.wav"
       },
       {
-        "title": "14. Escopeta_Qué pasó con esas escopetas.wav",
+        "title": "Escopeta Qué pasó con esas escopetas",
         "track_src": "/assets/media/audio/14-ESCOPETA/14. Escopeta_Qué pasó con esas escopetas.wav"
       },
       {
-        "title": "14. Escopeta_Reiquia.wav",
+        "title": "Escopeta Reiquia",
         "track_src": "/assets/media/audio/14-ESCOPETA/14. Escopeta_Reiquia.wav"
       },
       {
-        "title": "14. Escopeta_Ya despu+es...escopeta de cáusula.wav",
+        "title": "Escopeta Ya despu+es...escopeta de cáusula",
         "track_src": "/assets/media/audio/14-ESCOPETA/14. Escopeta_Ya despu+es...escopeta de cáusula.wav"
       },
       {
-        "title": "14. Escopeta_Ya después yo me di cuenta_Su funcionamiento.wav",
+        "title": "Escopeta Ya después yo me di cuenta_Su funcionamiento",
         "track_src": "/assets/media/audio/14-ESCOPETA/14. Escopeta_Ya después yo me di cuenta_Su funcionamiento.wav"
       }
     ]
@@ -403,23 +406,23 @@
   {
     "id": "15-CACHO",
     "portada_url": "/assets/img/Overlaped/16_15-CACHO.webp",
-    "almbum_title":  "EL CACHO",
+    "almbum_title":  "EL CUERNO",
 "info_text": [] ,
 "tracks": [
       {
-        "title": "15. Cuerno_Intro",
+        "title": "Cuerno Intro",
         "track_src": "/assets/media/audio/15-CACHO/15. Cuerno_Intro.mp3"
       },
       {
-        "title": "15. Cuerno_Miriam Mampira",
+        "title": "Cuerno Miriam Mampira",
         "track_src": "/assets/media/audio/15-CACHO/15. Cuerno_Miriam Mampira.mp3"
       },
       {
-        "title": "15. Cuerno_Quién tiene uno",
+        "title": "Cuerno Quién tiene uno",
         "track_src": "/assets/media/audio/15-CACHO/15. Cuerno_Quién tiene uno.mp3"
       },
       {
-        "title": "15. Cuerno_Uso",
+        "title": "Cuerno Uso",
         "track_src": "/assets/media/audio/15-CACHO/15. Cuerno_Uso.mp3"
       }
     ]
@@ -430,24 +433,24 @@
     "almbum_title":  "LIDERES SOCIALES",
     "info_text": [{
       "text_title":"Líderes sociales",
-      "text_author":" autor:  Santiago",
+      "text_author":"Autor:  Santiago",
       "text_content":"Aquí persiste un sindicato para la vida y una idea agrarista que se alza en defensa del territorio y de la dignidad campesina. Así, la organización sindical agraria encarna no solo a un grupo, sino a una orientación vital del campesinado en Sumapaz, donde llamarnos compañeros es, ante todo, una manera de pervivir. Nació para la paz y entre trochas, surcos y ranchos resistió la embestida de la guerra. Allí donde el miedo quiso sembrar silencio, la acción colectiva floreció. Este es el sindicato de las y los agrarios que supieron orientar la vida en organización y marcar el rumbo de una lucha en favor del campesinado. Es el sindicato de Elda María Poveda Vásquez, quien alzando su voz con temple de raudal, abrió el surco de la vida campesina con dignidad, cuyo ejemplo persiste y ha germinado la histórica labor de la mujer campesina en la organización.\nsalto Este es el sindicato que mantiene viva la orientación agrarista del Alto Sumapaz, el que resguarda la esperanza en cada parcela, en cada camino de herradura, en cada mano que siembra futuro.\nsalto ¡Que su lucha sea nuestra bandera, hoy y siempre!"
       }] ,
 "tracks": [
       {
-        "title": "Elda Maria Poveda Vazques (online-audio-converter.com)",
+        "title": "Elda Maria Poveda Vazques",
         "track_src": "/assets/media/audio/16-LÍDERES_SOCIALES/Elda Maria Poveda Vazques (online-audio-converter.com).mp3"
       },
       {
-        "title": "Evelio Poveda (online-audio-converter.com)",
+        "title": "Evelio Poveda",
         "track_src": "/assets/media/audio/16-LÍDERES_SOCIALES/Evelio Poveda (online-audio-converter.com).mp3"
       },
       {
-        "title": "Jorge Henrique Castellanos (online-audio-converter.com)",
+        "title": "Jorge Henrique Castellanos",
         "track_src": "/assets/media/audio/16-LÍDERES_SOCIALES/Jorge Henrique Castellanos (online-audio-converter.com).mp3"
       },
       {
-        "title": "Julio Alfonso Poveda (online-audio-converter.com)",
+        "title": "Julio Alfonso Poveda",
         "track_src": "/assets/media/audio/16-LÍDERES_SOCIALES/Julio Alfonso Poveda (online-audio-converter.com).mp3"
       },
       {
@@ -455,7 +458,7 @@
         "track_src": "/assets/media/audio/16-LÍDERES_SOCIALES/Reuniones.MP3"
       },
       {
-        "title": "Salvador Castellanos (online-audio-converter.com)",
+        "title": "Salvador Castellanos",
         "track_src": "/assets/media/audio/16-LÍDERES_SOCIALES/Salvador Castellanos (online-audio-converter.com).mp3"
       }
     ]
@@ -471,7 +474,7 @@
         "track_src": "/assets/media/audio/17-BANDERAS/Bandera Juventud Sumapaceña.MP3"
       },
       {
-        "title": "Bandera ZRC ",
+        "title": "Bandera ZRC",
         "track_src": "/assets/media/audio/17-BANDERAS/Bandera ZRC .MP3"
       },
       {
@@ -491,7 +494,7 @@
 "info_text": [] ,
 "tracks": [
       {
-        "title": "18 , 20. Camilo Torres _ Che Guevara (Filiberto Baquero Lopez)",
+        "title": "Camilo Torres - Che Guevara",
         "track_src": "/assets/media/audio/18-CAMILO_TORRES_Y_CHÉ/18 , 20. Camilo Torres _ Che Guevara (Filiberto Baquero Lopez).mp3"
       }
     ]
@@ -503,23 +506,23 @@
 "info_text": [] ,
 "tracks": [
       {
-        "title": "19.Escoba_Estrella Guerrero",
+        "title": "Escoba Estrella Guerrero",
         "track_src": "/assets/media/audio/19-ESCOBA-CAMPESINOS_BARRIENDO/19.Escoba_Estrella Guerrero.mp3"
       },
       {
-        "title": "19.Escoba_Miriam Mampira",
+        "title": "Escoba Miriam Mampira",
         "track_src": "/assets/media/audio/19-ESCOBA-CAMPESINOS_BARRIENDO/19.Escoba_Miriam Mampira.mp3"
       },
       {
-        "title": "19.Escoba_Posible Intro",
+        "title": "Escoba Posible Intro",
         "track_src": "/assets/media/audio/19-ESCOBA-CAMPESINOS_BARRIENDO/19.Escoba_Posible Intro.mp3"
       },
       {
-        "title": "Escoba-simbólicamente ",
+        "title": "Escoba simbólicamente ",
         "track_src": "/assets/media/audio/19-ESCOBA-CAMPESINOS_BARRIENDO/Escoba-simbólicamente .MP3"
       },
       {
-        "title": "Escoba-tipos y cambios",
+        "title": "Escoba tipos y cambios",
         "track_src": "/assets/media/audio/19-ESCOBA-CAMPESINOS_BARRIENDO/Escoba-tipos y cambios.MP3"
       },
       {
@@ -535,7 +538,7 @@
 "info_text": [] ,
 "tracks": [
       {
-        "title": "X. Hoz y Martillo (Filiberto Baquero Lopez)",
+        "title": "Hoz y Martillo",
         "track_src": "/assets/media/audio/20-SÍMBOLOS_IMPERIALISTAS/X. Hoz y Martillo (Filiberto Baquero Lopez).mp3"
       }
     ]
@@ -543,11 +546,11 @@
   {
     "id": "22-CACIQUE_CALARCÁ",
     "portada_url": "/assets/img/Overlaped/22_22-CACIQUE_CALARCA.webp",
-    "almbum_title":  "CACIQUE CALARCÁ",
+    "almbum_title":  "EL CACIQUE",
 "info_text": [] ,
 "tracks": [
       {
-        "title": "22. Cacique Calarcá (Alfredo Díaz Benítez)",
+        "title": "Cacique Calarcá",
         "track_src": "/assets/media/audio/22-CACIQUE_CALARCÁ/22. Cacique Calarcá (Alfredo Díaz Benítez).mp3"
       }
     ]
@@ -558,41 +561,41 @@
     "almbum_title":  "SIA Y EL AGUA",
 "info_text": [{
   "text_title":"Me Dijeron",
-      "text_author":" autor:  Estrella Guerrero",
+      "text_author":"Autor:  Estrella Guerrero",
       "text_content":"Me dijeron que escribiera\n\nDel agua su melodía,\n\npero yo vi tal sequía\n\nQue atravesó mi memoria.\n\n\n\nEl dolor se difundía\n\nsin ver brotar ni una gota.\n\nNo pude cerrar el grifo,\n\ndaba igual si estaba abierto, \n\nPor litros el fuego ardía\n\nAsfixiando las gargantas.\n\nEra tal la confusión \n\nDe aquella hora fatal\n\nQue nada podían hacer.\n\nLa huella hídrica estaba \n\nMuy lejos de ser grabada\n\nEn el pecho y la garganta\n\nDe aquellos que se morían\n\nHace siglos advertían\n\nBuscando una solución\n\nPero los amos del mundo\n\nSecaron venas al río\n\nDesertaron con mercurio\n\nLa tierra  que daba vida.\n\n\n\nEl pasado es un recuerdo.\n\nLa tierra yace en olvido.\n\n"
 }] ,
 "tracks": [
       {
-        "title": "23.1. Sia (Estrella Guerrero)",
+        "title": "Sia",
         "track_src": "/assets/media/audio/23-SIA_AGUA/23.1. Sia (Estrella Guerrero).mp3"
       },
       {
-        "title": "23.2. Sia_Créditos (Estrella Guerrero)",
+        "title": "Sia_Créditos",
         "track_src": "/assets/media/audio/23-SIA_AGUA/23.2. Sia_Créditos (Estrella Guerrero).mp3"
       }
     ]
   },
   {
-    "id": "24-GANCHO_Y_AZADÓN",
+    "id": "24-GANCHO_Y_AZADON",
     "portada_url": "/assets/img/Overlaped/24_24-GANCHO_Y_AZADON.webp",
     "almbum_title":  "GANCHO Y AZADON",
 "info_text": [] ,
 "tracks": [
       {
-        "title": "24. Gancho y azadón-Miriam Mampira",
+        "title": "Gancho y azadón-Miriam Mampira",
         "track_src": "/assets/media/audio/24-GANCHO_Y_AZADÓN/24. Gancho y azadón-Miriam Mampira.mp3"
       }
     ]
   },
   {
-    "id": "PINTURA INDÍGENA_CACIQUE_GAITANA",
+    "id": "PINTURA INDIGENA_CACIQUE_GAITANA",
     "portada_url": "/assets/img/Overlaped/25_25-PINTURA INDIGENA_CACIQUE_GAITANA.webp",
     "almbum_title":  "CACIQUE GAITANA",
 "info_text": [] ,
 "tracks": [
       {
-        "title": "X. Resistencia Indígena y Campesina (Alfredo Díaz Benítez)",
-        "track_src": "/assets/media/audio/25-PINTURA INDÍGENA_CACIQUE_GAITANA/X. Resistencia Indígena y Campesina (Alfredo Díaz Benítez).mp3"
+        "title": "Resistencia Indígena y Campesina",
+        "track_src": "/assets/media/audio/PINTURA INDÍGENA_CACIQUE_GAITANA/X. Resistencia Indígena y Campesina (Alfredo Díaz Benítez).mp3"
       }
     ]
   }

@@ -1,4 +1,5 @@
 export const infoData = {
+  
 
 "Mari": {
     popover_nombre: "NOMBRE COMPLETO: Angela Marisela Romero Mican",

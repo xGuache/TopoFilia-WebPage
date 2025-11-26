@@ -27,3 +27,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. Obtener referencias a los elementos
+    const navbar = document.getElementById('navbar-lateral');
+    const toggleBtn = document.getElementById('toggle-btn');
+
+    // 2. Definir la función que alterna la clase
+    function toggleNavbar() {
+        // 🏆 CLAVE: .classList.toggle('abierto')
+        // Si la clase existe, la quita. Si no existe, la añade.
+        navbar.classList.toggle('abierto');
+        
+        // Opcional: Cambiar el texto/icono del botón al alternar
+        if (navbar.classList.contains('abierto')) {
+            toggleBtn.textContent = '|||'; // Muestra una "X"
+        } else {
+            toggleBtn.textContent = '☰'; // Muestra el icono de menú
+        }
+    }
+
+    // 3. Asignar el evento de clic al botón
+    toggleBtn.addEventListener('click', toggleNavbar);
+});

@@ -38,6 +38,7 @@
     
     border-radius: 20px;
     background-image: url(/assets/img/Background/Fondo-papel5.png);
+    background-size: 100%;
 }
 
 .pop-tex-head{
@@ -47,7 +48,7 @@
 
 .pop-cont-item p{
     justify-content: center;
-    
+    font-family: 'Times New Roman', Times, serif;    
 }
 
 hr {
@@ -86,9 +87,13 @@ hr {
 
 
 .album-information{
-    flex-basis: 20%;
+    height: 20%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    background-color: rgba(96, 56, 0, 0.1);
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+    border-radius: 20px;
 }
 
 
@@ -116,22 +121,14 @@ hr {
 }
 
 
-.visualizer-item{
-    max-height: 100%;
-    flex-grow: 1;
-}
 
-.Container-content-media{    
-    justify-items: center;
-    flex-shrink: 1;
-    width: 40%;
-    height: 100%;
-}
+
 
 .track-portada-cont{
-    overflow: hidden;
     align-items: center;
     height: 100%;
+    max-height: 100%;
+    max-width: 100%;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 50px;
@@ -139,34 +136,42 @@ hr {
 
 #track-portada{
    
-    object-fit: cover;
+    object-fit: contain;
     height: 100%;
     max-width: 100%;
     max-height: 100%;
-       mask-image: linear-gradient( to bottom,
-        rgb(0, 0, 0, 1), 
-        rgba(0, 0, 0, 0.05)  
-    );
 }
 
 
 
-@media (width>768px){
+@media (max-width:738px){
   
     .Container-reproductor{
-      width: 60%;
+      width: 80% !important;
       flex-basis: 60%;
-      height: 100% !important;
+      height: 60% !important;
     }
 
-}
-
-@media (width<768px){
     .Container-content-media{
     height: 40%;
-    flex-basis: 100%;
+    max-height: 40% !important;
+    flex-basis: 100% !important;
+    max-width: 100% !important;
     }
 }
+
+
+
+.Container-content-media{    
+    justify-items: center;
+    flex-shrink: 1;
+    height: 100%;
+    width: 40%;
+    max-width: 40%;
+    max-height: 100%;
+    flex-basis: 40%;
+}
+
 
 .Container-reproductor{
 
@@ -179,9 +184,10 @@ hr {
 
     gap: 10px;
 
-    padding: 5%;
+    padding: 10px;
     justify-self: center;
-    height: 60%;
+    width: 60%;
+    height: 90%;
     max-height: 90%;
     max-width: 90%;
     box-sizing: border-box;
@@ -204,29 +210,27 @@ hr {
 
 .track-title{
     flex-grow: 1;
+    margin-left: 2%;
 }
 
-.track-title h2{
-    font-family: "adobe-caslon-pro", serif;
+.track-title h1{
+    text-align: justify;
     font-weight: bold;
-    font-style: normal;
-    font-size: clamp(1rem, 2vw, 3rem);
+    font-style: italic;
+    font-size: clamp(1rem, 2vw, 5rem);
     color: whitesmoke;
-    text-justify: distribute;
-
     margin: 0;
     padding: 0;
 }
 
 
-.track-title h3{
-    font-family: "Source Serif 4", serif;
+.track-title p{
     font-optical-sizing: auto;
     font-weight:normal;
-    font-style: italic;
-    font-size: clamp(0.8rem, 1vw, 2rem);
+    font-style: normal;
+    font-size: clamp(0.8rem, 2vw, 2rem);
     color: whitesmoke;
-    text-justify: distribute;
+    text-align: justify;
 
        margin: 0;
     padding: 0;
@@ -238,11 +242,13 @@ hr {
     width: 30%;
     align-content: center;
     display: none;
+    text-align: center;
     
 
 }
 
 .folder-pop img{
+    height: 100%;
     width: 80%;
     object-fit: contain;
 }
@@ -253,11 +259,12 @@ hr {
 
 
 .__slider {
+
     -webkit-appearance: none;
     appearance: none;
     background: #b98f05; /* Grey background */
     outline: none; /* Remove outline */
-    height: 6px;
+    height: 5%;
     border-radius: 10px;
     border-style:solid;
     border-color: #644e06; 
@@ -276,16 +283,23 @@ hr {
   width: 50px;
   height: 50px;
   filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+
+  background-size: 90%;
+
 }
 
 #Controls_Btn{
+
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
+
+    flex-grow: 1;
+
     justify-content: space-around;
     flex-wrap: nowrap;
+
     gap: 2%;
-    padding: 2%;
+
     box-sizing: border-box;
 
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
@@ -307,13 +321,21 @@ hr {
 
 .reproducer{
     display: flex;
+    
+    flex-grow: 1;
+    
     flex-direction: row;
+    
     align-items: center;
+    
     justify-content: space-around;
+    
     flex-wrap: nowrap;
-    padding: 2%;
+    
 
-    height: 40%;
+    height: 50%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -341,7 +363,8 @@ hr {
 
 .rep_button img{
     object-fit: contain;
-    height: 100%;
+    max-height: 100%;
+    width: 100%;
 }
 
 /*#Play-Pause{
@@ -368,8 +391,8 @@ hr {
 
 #Track_List {
 
-     overflow-y:scroll;
-     scrollbar-width: none;
+    overflow-y:scroll;
+    scrollbar-width: none;
     overflow-x: hidden;
     flex-grow: 1;
 
@@ -378,7 +401,8 @@ hr {
 
 #Track_List .ListItems{
 
-    max-width: 100%;
+    width: 100%;
+
     display: flex;
 
     max-height: 100%;
@@ -389,14 +413,10 @@ hr {
     padding: 0;
 
     flex-direction: column;
-    
-   
 
-
-    align-items: flex-start;
     box-sizing: border-box;
     border-radius: 10px;
-    flex: 1 1 auto;
+
     list-style-type: none;
     scroll-behavior: smooth;
 }
@@ -413,7 +433,7 @@ hr {
 }
 
 .ListItems::-webkit-scrollbar{
-    width: 10px;
+    width: 0;
 }
 
 .ListItems::-webkit-scrollbar-track{
@@ -439,15 +459,16 @@ hr {
 
 
 .ListItems li{
+    flex-grow: 1;
     display: block;
-    width: 95%;
+    height: 40%;
+    width: 98%;
     padding: 5px;
 
 
-    font-family: "Source Serif 4", serif;
-    font-optical-sizing: auto;
+    font-family: "FF Good Pro";
     font-weight:normal;
-    font-style: italic;
+    font-style: normal;
     font-size: clamp(0.8rem, 1vw, 2rem);
     color: whitesmoke;
     text-justify: distribute;

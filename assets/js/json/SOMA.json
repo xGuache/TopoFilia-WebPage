@@ -1,0 +1,122 @@
+{
+    "1-VELA": {
+        "img_src": "/assets/img/Overlaped/SOMA/1-VELA.webp",
+        "text_content": [
+            {
+                "author": "Katerin Ramírez",
+                "name": "Vela",
+                "content": "Durante la época de la violencia en las casas campesinas la vela alumbraba, alumbraba en la gélida noche, en la noche silenciosa, esperaba la cena cocinada con leña de chilco y un fuego ARDIENTE, fue que horas atrás ella misma había encendido; tomaron una parte de ella y en medio de chamizos creció y alimento y vivo. La vela esperaba un disparo, un grito, un desalojo para APAGADA, estos son los rastros de la guerra."
+            }
+        ]
+    },
+    "2-LENA": {
+        "img_src": "/assets/img/Overlaped/SOMA/2-LENA.webp",
+        "text_content": [
+            {
+                "author": "Santiago Porras",
+                "name": "Leña",
+                "content": "Labor de grandes y chicos, de chamizas y astillas, cortaduras y rajaduras. Recolectada en tercios y nacida de la tierra, con tránsito a su corteza seca para después alimentar el Fogón. Es memoria viva y la compañía de los caminos andados. Es una añoranza sobre Carmelina, de sus travesías y andares para alimentar el corazón del hogar."
+            }
+        ]
+    },
+    "3-RADIO": {
+        "img_src": "/assets/img/Overlaped/SOMA/3-RADIO.webp",
+        "text_content": [
+            {
+                "author": "Brayan Rojas",
+                "name": "Radio",
+                "content": "En esta radio se escuchan las noticias que ocurren en nuestro país y la música creada por nuestros artistas, quienes transmiten sus sentimientos para acompañar a las personas mientras realizan sus labores. En las mañanas, las familias sumapaceñas sintonizan la radio para comenzar un día próspero y lleno de gratitud."
+            }
+        ]
+    },
+    "4-EXPRIMIDOR": {
+        "img_src": "/assets/img/Overlaped/SOMA/4-EXPRIMIDOR.webp",
+        "text_content": [
+            {
+                "author": "Maicol Rojas",
+                "name": "Exprimidor",
+                "content": "¡No me gustaba el agua de panela! El sabor era raro, hasta que mi abuelita le puso limón. Desde entonces el exprimidor guarda mi mejor recuerdo en la cocina."
+            }
+        ]
+    },
+    "5-BANQUITO_DE_MADERA": {
+        "img_src": "/assets/img/Overlaped/SOMA/5-BANQUITO_DE_MADERA.webp",
+        "text_content": [
+            {
+                "author": "Laura Acero",
+                "name": "Banquito de madera",
+                "content": "En un banquito así de pequeño me sentaron una noche para que pudiera calentarme. Bello puesto de honor, ahí cerquita al fogón, el lugar para las conversaciones. El banquito de la casa tiene muchísimos años, fue hecho por un abuelo y sigue igualito. Banco de madera artesanal, pensamiento en familia, voz para las oralidades. Ven a sentarte aquí."
+            }
+        ]
+    },
+    "6-CHOCO": {
+        "img_src": "/assets/img/Overlaped/SOMA/6-CHOCO.webp",
+        "text_content": [
+            {
+                "author": "Aracely Romero Susa (Estrella Guerrero)",
+                "name": "Choco",
+                "content": "Tronco ahuecado, barrigón, baila en tu vientre el maná, dorado fermento, cultivo de risas, espanto de penas, hidratación del valiente jornalero, herencia del abuelo y padre. Ancestro es el guarapo inigualable, presente en la cocina y en el tajo, en la memoria y el recuerdo. Camino en las palabras y sin ellas. Versos, canto, poesía, Mezcla de llanto sin hipocresía. Fuiste destierro y resistencia."
+            }
+        ]
+    },
+    "7-LICUADORA": {
+        "img_src": "/assets/img/Overlaped/SOMA/7-LICUADORA.webp",
+        "text_content": [
+            {
+                "author": "Laura Acero",
+                "name": "Licuadora",
+                "content": "Canta la licuadora, al son del juguito de mora."
+            }
+        ]
+    },
+    "8-TABLA_DE_PICAR": {
+        "img_src": "/assets/img/Overlaped/SOMA/8-TABLA_DE_PICAR.webp",
+        "text_content": [
+            {
+                "author": "Diego Riveros",
+                "name": "Tabla de picar",
+                "content": "En este punto se mide la destreza de quién cocina. La habilidad del corte, el golpe constante entre el filo del cuchillo contra la dura madera. Todo se destruye para alimentar el alma, para dar vida."
+            }
+        ]
+    },
+    "9-AREPERO": {
+        "img_src": "/assets/img/Overlaped/SOMA/9-AREPERO.webp",
+        "text_content": [
+            {
+                "author": "Natalia Micán",
+                "name": "Arepero",
+                "content": "Las arepas de maíz de la abuela toman color y su olor invade la cocina campesina. Las manos que voltean los amasijos son bien conocidas por el arepero, porque su uso es de tiempos antiguos. Soy el sabor de la memoria y la sabiduría."
+            }
+        ]
+    },
+    "10-MOLINO": {
+        "img_src": "/assets/img/Overlaped/SOMA/10-MOLINO.webp",
+        "text_content": [
+            {
+                "author": "Elkin Romero",
+                "name": "Molino",
+                "content": "El molino, como objeto tradicional que nos ayuda a triturar y moler maíz y demás granos, en su boca recibe los granos, que poco a poco bajan al corazón del metal. Al girar, los granos se rompen, se transforman en harina y así mismo nacen las arepas. Cada vuelta es esfuerzo, cada grano es historia. Firme en algún lugar, sujeta con fuerza el molino que no se detiene. Del maíz molido brota el alimento para todos y todas; gira y tritura, transforma. Con la fuerza de la mano, la manivela gira y da vida al molino."
+            }
+        ]
+    },
+    "11-CUBIOS": {
+        "img_src": "/assets/img/Overlaped/SOMA/11-CUBIOS.webp",
+        "text_content": [
+            {
+                "author": "Sofía Gaviria",
+                "name": "Cubios",
+                "content": "Se sumerge en las profundidades terrestres. Sabor a noche de tierra. Cuerpo ondulado por el tiempo. Paciencia de manos campesinas que cuidan la siembra. Cubio de tierra y agua que alimenta el alma."
+            }
+        ]
+    },
+    "12-COCINA_EN_LEÑA": {
+        "img_src": "/assets/img/Overlaped/SOMA/12-COCINA_EN_LEÑA.png",
+        "text_content": [
+            {
+                "author": "Marisela Romero",
+                "name": "Estufa de leña",
+                "content": "La estufa de leña es un elemento fundamental en los hogares sumapaceños, ya que allí se preparan los alimentos y, mientras su fuego arde, la familia comparte vivencias y aventuras. Entonces la casa se convierte en HOGAR."
+            }
+        ]
+    }
+}

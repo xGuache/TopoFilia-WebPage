@@ -1,6 +1,6 @@
 //Info Track Variables
-const TitleTrack = document.querySelector('.track-title h2');
-const ArtisName = document.querySelector('.track-title h3');
+const TitleTrack = document.querySelector('.track-title h1');
+const ArtisName = document.querySelector('.track-title p');
 
 //Progress slidebar Variables
 const Progress_Audio = document.getElementById('Progress_Audio');
@@ -27,8 +27,8 @@ const visualizer = document.getElementById('Container-visualizer');
 const text_popup = document.getElementById('popover-info');
 const carpeta = document.getElementById('folder-pop');
 
-let AlbumInfo = [];
 let TrackList= [];
+let AlbumInfo = null;
 
 async function loadAudioData() {
 
@@ -41,14 +41,8 @@ async function loadAudioData() {
         if (!response.ok) {
             throw new Error(`Error HTTP: ${response.status}`);
         }
-        
-        
 
         const TrackData = await response.json();
-
-        console.log("cargando json..");
-
-        console.log(TrackData);
 
         return TrackData;
 
@@ -65,28 +59,21 @@ function manejarClickHotspot(event) {
     
     event.stopPropagation();
 
-    console.log("buscando album...", DOMtrackid);
-
     AlbumInfo = TrackList.find(item => {
 
         return item.id === DOMtrackid;
 
     });
 
-    console.log("El id es..",DOMtrackid)
-
    if (AlbumInfo) {
      
-             
         TrackListUpdate(AlbumInfo);
         TrackInfoUpdate(AlbumInfo);
-        Portada.src = AlbumInfo.portada_url;
+        Portada.src = AlbumInfo.portada_url;      
+        MostrarCarpeta(AlbumInfo);
+        cargaContenidoTexto(AlbumInfo);
 
         PopMP3.classList.add('mostrar-mp3');
-        
-        MostrarCarpeta(AlbumInfo);
-
-        cargaContenidoTexto(AlbumInfo);
 
     } else {
         console.error(`Error: No se encontró información para el ID: ${DOMtrackid}`);
@@ -99,9 +86,6 @@ async function initializeApp() {
     TrackList = await loadAudioData(); // Esperar a que cargue el JSON 
 
     if (TrackList && TrackList.length > 0) {
-
-        console.log("Datos listos. Inicializando Hotspots...");
-        
         
         //Leer los clicks
 
@@ -313,7 +297,10 @@ document.addEventListener('click', (e) => {
     // Si el popover está activo Y el click fue fuera del popover y fuera de un trigger
     if (PopMP3.classList.contains('mostrar-mp3') && !visualizer.contains(e.target))  {
         PopMP3.classList.remove('mostrar-mp3');
+        carpeta.classList.remove('mostrar-mp3')
         PauseTrack();
+        CurrentTrackIndex = 0;
+        AlbumInfo = null;
     }
 
     if (text_popup.classList.contains('mostrar-mp3') && !text_popup.contains(e.target))  {
