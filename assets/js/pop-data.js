@@ -17,7 +17,7 @@ export const infoData = {
     popover_nombre: "NOMBRE COMPLETO: Brayan Alexander Rojas Suarez",
     popover_identitario: "NOMBRE IDENTITARIO: Gordo",
     popover_cuerpo: "Soy Brayan Rojas, campesino oriundo de la vereda Santa Rosa en la localidad de Sumapaz, estudiante de zootecnia de la Universidad Nacional de Colombia soy miembro del colectivo Sendero de niebla donde buscamos que a través del arte y la co-creación transmitir los saberes de los abuelos a las futuras generaciones, fui miembro del consejo local de juventud donde aportábamos en la identificación y solución de los diferentes inconvenientes que se presentaban en la localidad.",
-    popover_img: "/assets/img/Fotos/3.BRAYAN_ROJAS.webp"
+    popover_img: "/assets/img/Fotos/3.BRAYAN_ROJAS.png"
   },
   "Cicatriz": {
     popover_nombre: "NOMBRE COMPLETO: Diego Andres Riveros Espinosa",
