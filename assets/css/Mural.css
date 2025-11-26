@@ -1,0 +1,152 @@
+.Epopeya_Container{
+    height: 100%;
+    width: 100%;
+}
+
+/*Establece el comportamiento del contenedor como scroll*/
+
+.Scroll-Container{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    max-width: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    pointer-events: all;    
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.Mural-Container{
+    position: relative; 
+    height: 100%;
+    width: fit-content;
+    top: 0px;
+    left: 0px;
+}
+
+/*Ajusta la imagen a verticalmente sobre la pantalla*/
+
+.Img-Mural
+{   
+     display: block;
+     height: 100%;
+     width: auto;
+     background-image: url(/assets/img/Background/Pared\ del\ mural\ completo.jpg);
+}
+
+
+.Hotspot-Container{
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+}
+
+.Position-Hotspot{
+    padding: 0px;
+    margin: 0px;
+    position:absolute;
+}
+
+
+.inside {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+
+}
+
+
+.divisor{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-style: solid;
+    border-color: aqua;
+    
+}
+
+
+.inside:hover{
+    /* Opciones: */
+    /* A) Usar un segundo background-image (otra parte del sprite) */
+ 
+    
+    /* B) Usar un filtro CSS para darle un brillo */
+    filter: brightness(1.2) drop-shadow(0 0 5px yellow);
+    transform: translateY(4px);
+    
+    /* El filtro y el brillo SÓLO se verán DENTRO del área definida por clip-path */
+}
+
+
+
+
+.inside-svg svg path {
+   fill: rgba(0, 0, 0, 0) !important;
+}
+
+/*Ajusta el contenedor a pantallas muy pequeñas*/
+
+@media (max-height: 375px){
+
+.Img-Mural
+{
+    width: 550vw;
+    height: 100VH;
+ }
+
+}
+
+
+.controls {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      box-sizing: border-box;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      pointer-events: none;
+      z-index: 10;
+    }
+
+.Button_Back{
+background: linear-gradient(to left, transparent, rgba(255,255,255,0.2));
+}
+.Button_Next{
+background: linear-gradient(to right, transparent, rgba(255,255,255,0.2));
+}
+
+.controls button {
+      height: 100vh;
+      backdrop-filter: blur(5px);
+      border-radius: 10px;
+      opacity: 0.6;
+      border:none;
+      color: rgb(170, 154, 4);
+      font-size: 2rem;
+      padding: 0.5rem 1rem;
+      pointer-events: auto;
+      touch-action: manipulation;
+}
+
+.controls button:hover, button:active, button:focus  {
+  opacity: 1;
+}
+
+

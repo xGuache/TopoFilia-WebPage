@@ -1,0 +1,114 @@
+#popover-info {
+    position: absolute;
+    z-index: 1040;
+}
+
+.modal-pop{
+    background: transparent;
+    border: none;
+    width: 80%;
+    min-width: 80%;
+    height: auto;
+    visibility: hidden;
+    
+}
+
+@media (max-width: 768px) {
+
+    #popover-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 1070; 
+        width: 100vw; 
+        height: 100vh; 
+    }
+
+    .pop-cont{
+        flex-direction: column !important;
+        height: 90%;
+        max-height: 90%;
+        width: 90%;
+    }
+
+    .pop-cont-item{
+        padding: 20px !important;
+    }
+
+     .pop-cont-img{
+        
+        padding-bottom: 0px !important;
+        max-height: 40% !important;
+    }
+}
+
+
+.mostrar{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.pop-cont{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    justify-content: center;
+}
+
+
+.pop-cont-item{
+    
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+    max-height: 50%;
+    
+}
+
+.pop-cont-text{
+    flex-basis: 60% !important;
+    flex-grow: 1;
+    flex-shrink: 1;
+    
+    overflow-wrap: break-word;
+    white-space: normal;
+    
+}
+
+.pop-cont-img{
+    flex-basis: 30% !important;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    display: flex;
+    border-radius: 10px;
+
+}
+
+
+.pop-cont-img img{
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.pop-cont-text h2{
+    font-family:'FF Good Pro';
+    font-weight: lighter;
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
+    color: white;
+}
+
+.pop-cont-text p{
+    font-family:'FF Good Pro';
+    text-align: justify;
+    font-weight: lighter;
+    font-size: clamp(0.6rem, 2vw, 1.1rem);
+    color: white;
+}

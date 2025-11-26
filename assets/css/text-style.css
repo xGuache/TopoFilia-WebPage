@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'FF Good Pro';
+    src: local('FF Good Pro Light'), local('FF-Good-Pro-Light'),
+        url('/assets/fonts/FFGoodPor/FFGoodPro-Light.woff2') format('woff2'),
+        url('/assets/fonts/FFGoodPor/FFGoodPro-Light.woff') format('woff'),
+        url('/assets/fonts/FFGoodPor/FFGoodPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: clamp(1rem, 5vw, 4rem);
+    font-weight: bold;
+}
+
+p{
+    font-family: 'FF Good Pro';
+    text-align: justify;
+    font-size: clamp(1rem, 2vw, 2rem); 
+}   
+
+
+
+
+h4{
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-weight: lighter;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+}
+
+h3{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 3rem); 
+    color: white;
+}
+
+button{
+    font-family: "Source Sans 3", sans-serif;   
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    text-align: center
+}
