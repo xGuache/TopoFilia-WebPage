@@ -45,8 +45,8 @@
     width: 100%;
     
     border-radius: 20px;
-    background-image: url(/assets/img/Background/Fondo-papel5.png);
-    background-size: 100%;
+    background-image: url(/assets/img/Background/Fondo-papel5.webp);
+    background-size: cover;
 }
 
 .pop-tex-head{
@@ -55,9 +55,17 @@
 }
 
 .pop-cont-item p{
-    justify-content: center;
-    font-family: 'Times New Roman', Times, serif;    
+    font-family: 'FF Good Pro';
+    text-align: justify;
+    color: black;
 }
+
+.pop-cont-item h5{
+    font-family: 'FF Good Pro';
+    text-align: justify;
+    color: black;
+}
+
 
 hr {
     
@@ -78,12 +86,22 @@ hr {
     box-sizing: border-box;
 }
 
+.pop-cont-item h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: black;
+    font-size: clamp(1rem, 3vw, 3rem);
+
+}
 .pop-cont-item{
+    color: black;
     height: 100%;
     box-sizing: border-box;
     padding: 10%;
     text-align: justify;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 1vw, 2rem);
+    color: black;
 }
 
 

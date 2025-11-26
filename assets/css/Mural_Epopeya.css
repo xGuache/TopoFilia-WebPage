@@ -109,7 +109,7 @@
 
 /* --- Clase para Activar la Animación --- */
 .pulsating {
-    animation: pulse-glow 2s infinite alternate ease-in-out; /* 2s duración, infinito, alternar (ida y vuelta) */
+    animation: pulse-glow 1s infinite alternate ease-in-out; /* 2s duración, infinito, alternar (ida y vuelta) */
 }
 
 

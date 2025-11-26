@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const TIEMPO_MIN_ENTRE_DESTUELLO = 500; // Mínimo 3 segundos
     const TIEMPO_MAX_ENTRE_DESTUELLO = 1000; // Máximo 8 segundos
-    const DURACION_DESTUELLO = 4000;       // El destello dura 4 segundos (2 ciclos de 2s)
+    const DURACION_DESTUELLO = 3000;       // El destello dura 4 segundos (2 ciclos de 2s)
 
     // ----------------------------------------------------
     // Función para activar un destello en un hotspot aleatorio

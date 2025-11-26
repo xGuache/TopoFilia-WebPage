@@ -216,20 +216,20 @@
 
 @keyframes pulse-glow {
     0% {
-        filter: brightness(0.9) drop-shadow(0 0 5px rgb(8, 241, 249));; /* Brillo inicial */
+        filter: brightness(0.9) drop-shadow(0 0 10px rgb(8, 241, 249));; /* Brillo inicial */
         opacity: 0.8;
     }
     50% {
-         filter: brightness(1.2) drop-shadow(0 0 5px rgb(8, 241, 249)); /* Brillo máximo */
+         filter: brightness(1.5) drop-shadow(0 0 10px rgb(8, 241, 249)); /* Brillo máximo */
         opacity: 1; /* Ligeramente más opaco */
     }
     100% {
-         filter: brightness(0.9) drop-shadow(0 0 5px rgb(8, 241, 249)); /* Vuelve al brillo inicial */
+         filter: brightness(1) drop-shadow(0 0 10px rgb(8, 241, 249)); /* Vuelve al brillo inicial */
         opacity: 0.8;
     }
 }
 
 /* --- Clase para Activar la Animación --- */
 .pulsating {
-    animation: pulse-glow 2s infinite alternate ease-in-out; /* 2s duración, infinito, alternar (ida y vuelta) */
+    animation: pulse-glow 1s infinite alternate ease-in-out; /* 2s duración, infinito, alternar (ida y vuelta) */
 }
