@@ -125,13 +125,13 @@ hr {
 
 
 .track-portada-cont{
-    align-items: center;
-    height: 100%;
-    max-height: 100%;
-    max-width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 50px;
+        align-items: center;
+        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 50px;
 }
 
 #track-portada{

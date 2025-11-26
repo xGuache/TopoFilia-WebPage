@@ -10,15 +10,30 @@ header{
 
     display: flex;
     flex-direction: column;
-   
     background: black;
-
     padding: 0px;
     margin: 0px;
     height: 100vh;
     width: 20vw;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(+50vw);
 
     z-index: 1050;
+}
+
+.mostrar {
+    
+    transform: translateX(0);
+}
+
+@media (max-width:738px){
+  
+    .headnav-main{
+        width: 30vw !important;
+    }
+    .headnav-link{
+        font-size: clamp(0.8rem, 1vw, 2rem) !important;
+    }
 }
 
 .headnav-btn{
@@ -27,13 +42,29 @@ header{
     right: 20px;
     bottom: 20px;
 
-    height: 5%;
-    width: 5%;
+    height: 40px;
+    width: 40px;
+
+    z-index: 2000;
+
+    border-radius: 50%;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    transition: transform 1s ease;
+    font-size: clamp(0.8rem, 1vw, 1rem);
 }
 
-.headnav-btn button{
-    
-    border-radius: 50%;
+.btn_color{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
 }
 
 .headnav{
@@ -128,3 +159,7 @@ header{
     object-fit: contain;
    
 }
+
+
+
+
