@@ -126,7 +126,7 @@
 
 
 .desactivado {
-
+    transform: translateX();
     filter: grayscale(100%); /* 100% es blanco y negro */
 }
 
