@@ -1,8 +1,10 @@
+// Esta funcion define el comportamiento de los popover - popups de las tarjetas de iformacion para el equipo de "El laboratorio"
+
 import {infoData} from './pop-data.js';
 
-const popover = document.getElementById('popover-info');
+const popover = document.getElementById('lab-popover-info');
 const triggers = document.querySelectorAll('.modal-open');
-const popcont = document.getElementById('pop-cont');
+const popcont = document.getElementById('lab-pop-cont');
 
 
 function openPopover(triggerElement) {
@@ -11,33 +13,37 @@ function openPopover(triggerElement) {
     const infoId = card.dataset.modal;
     const data = infoData[infoId];
 
-    // 1. Cargar el contenido dinámico
+    // Cargar el contenido dinámico
 
-    document.getElementById('popover_img').src = data.popover_img;
-    document.getElementById('popover_img').alt = data.popover_nombre;
+    document.getElementById('lab-popover_img').src = data.popover_img;
+    document.getElementById('lab-popover_img').alt = data.popover_nombre;
 
-    document.getElementById('popover_nombre').textContent = data.popover_nombre;
-    document.getElementById('popover_identitario').textContent = data.popover_identitario;
-    document.getElementById('popover_cuerpo').textContent = data.popover_cuerpo;
+    document.getElementById('lab-popover_nombre').textContent = data.popover_nombre;
+    document.getElementById('lab-popover_identitario').textContent = data.popover_identitario;
+    document.getElementById('lab-popover_cuerpo').textContent = data.popover_cuerpo;
 
-    // 2. Obtener la posición de la tarjeta (ancla)
+    // Obtener la posición de la tarjeta (ancla)
     const rect = card.getBoundingClientRect();
 
-    // 3. Calcular la posición absoluta en el documento (sumando el scroll y navbar)
+
+    // Calcular la posición absoluta en el documento (sumando el scroll y navbar)
+
     const navBar = document.querySelector('.headnav-main'); 
     const navHeight = navBar ? navBar.offsetHeight : 0;
     const navBarAbsoluteBottom = window.scrollY + navHeight;
     const targetTop = rect.top + window.scrollY;
-    //const targetLeft = rect.left + window.scrollX;
 
-    // 4. Aplicar las coordenadas al Popover (ejemplo: aparece debajo de la tarjeta)
+
+    // Aplicar la posicion en el documento del popover.
+
     const popoverHeight = popover.offsetHeight; // Necesario para centrarlo
 
 
    const anchoActual = window.innerWidth;
     
-    // Define tus propios breakpoints (puntos de quiebre)
-    const breakpointMovil = 768; 
+    // Define cuando se comporta como popover o popup para responsive.
+
+    const breakpointMovil = 768; // Tamaño de pantalla
 
     let finalTop;
 
@@ -62,15 +68,18 @@ function openPopover(triggerElement) {
 
 
 
-    // 5. Mostrar
-    popover.classList.add('mostrar');
+    // Mostrar el pop over
+    popover.classList.add('mostrar-modal');
 }
 
+
+//Escucha el click de cada boton en el grid.
 
 triggers.forEach(button => {
     button.addEventListener('click', (e) => {
         
         // Abre el popover para el botón clickeado
+
         openPopover(e.currentTarget);
         e.stopPropagation(); // Evita que el click se propague al documento
     });
@@ -78,17 +87,19 @@ triggers.forEach(button => {
 
 
 // Cierre al hacer click fuera del popover (comportamiento modal/popup)
+
 document.addEventListener('click', (e) => {
+
     // Si el popover está activo Y el click fue fuera del popover y fuera de un trigger
-    if (popover.classList.contains('mostrar') && !popcont.contains(e.target)) {
-        popover.classList.remove('mostrar');
+    if (popover.classList.contains('mostrar-modal') && !popcont.contains(e.target)) {
+        popover.classList.remove('mostrar-modal');
     }
 });
 
 
 window.addEventListener('resize', () => {
-        // Re-calcula la posición del popover solo si está visible
-        if (popover.classList.contains('mostrar')) {
-            popover.classList.remove('mostrar');
+        // Re-calcula la posición del popover solo si está visible cuando cambia de tamaño la pantalla
+        if (popover.classList.contains('mostrar-modal')) {
+            popover.classList.remove('mostrar-modal');
         }
     });

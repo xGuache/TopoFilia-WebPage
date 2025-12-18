@@ -7,13 +7,9 @@
     <title>ORALITURA SUMAPAZ</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/main.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/style.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/navbar.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/modal-main.css'>
+
 
     <!--Font-->
-
-    <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/text-style.css'>
     <link rel="stylesheet" href="https://use.typekit.net/sib7yfi.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,8 +33,11 @@
     </div>
 
     <!---->
-    <section id="root" class="Container">
-        <header>
+    <section id="root">
+
+        <section id ="layout-container" class="layout-container">
+        
+        <header class="header-main">
             <!---->
             <nav id="headnav-main" class="headnav-main">
                 <ul class="headnav">
@@ -66,10 +65,10 @@
 
         <main id="main-page">
             <!---->
-            <section class="Container-Gallery">
+            <section class="container-gallery">
 
-                <div class="Gallery-content">
-                        <a class="Gallery-item Epopeya" href="/pages/murales/Epopeya/Epopeya.html">
+                <div class="gallery-content">
+                        <a class="gallery-item epopeya" href="/pages/murales/Epopeya/Epopeya.html">
                                 <img src="/assets/img/Murales/Epopeya-main.webp" alt="ICON">
                                 <div>
                                     <h1>LA EPOPEYA DE UN PUEBLO GUERRERO</h1>
@@ -77,7 +76,7 @@
                     </a>
 
 
-                    <a class="Gallery-item Soma" href="pages/murales/Soma/Soma.html">
+                    <a class="gallery-item soma" href="pages/murales/Soma/Soma.html">
                             <img src="/assets/img/Murales/Mural de sumapaz.webp" alt="ICON">
                             <div>
                                 <h1>LA COCINA SUMAPACEÑA</h1>
@@ -92,12 +91,13 @@
             <footer>
 
             </footer>
+            </section>
     </section>
     <!-- <script src="/assets/js/route.js"></script>-->
 
-    <script src="/assets/js/nav.js"></script>
-    <script src="/assets/js/loadscreen.js"></script>
-    <script src="/assets/js/gallery.js"></script>
+    <script src="/assets/js/ui/nav.js"></script>
+    <script src="/assets/js/ui/loadscreen.js"></script>
+    <script src="/assets/js/ui/gallery.js"></script>
 
 
 

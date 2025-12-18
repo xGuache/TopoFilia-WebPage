@@ -1,3 +1,5 @@
+/*Propiedades generales para todas las paginas*/
+
 * {
   cursor: url('/assets/img/Mous\ mazorca.png'), auto;
 }
@@ -7,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  
   overflow: auto; /* evita scroll durante la carga */
   scroll-behavior: smooth;
 }
@@ -19,12 +22,16 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+
   width: 100vw;
   height: 100vh;
-  background-color: black;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: black;
+
   z-index: 9999;
 }
 
@@ -34,3 +41,5 @@ body {
   height: auto;
   object-fit: contain;
 }
+
+

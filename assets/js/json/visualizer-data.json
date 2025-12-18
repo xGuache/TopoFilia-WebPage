@@ -4,7 +4,7 @@
 [
   {
     "id": "1Y2-ERASMO_JUAN_DE_LA_CRUZ_CHAPARRAL_1",
-    "portada_url": "/assets/img/Overlaped/1_1-ERASMO_JUAN_DE_LA_CRUZ_CHAPARRAL (1).webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/1_1-ERASMO_JUAN_DE_LA_CRUZ_CHAPARRAL (1).webp",
     "almbum_title":  "JUAN DE LA CRUZ VARELA",
     "info_text": [] ,
 "tracks": [
@@ -22,7 +22,7 @@
 
   {
     "id": "1Y2-ERASMO_JUAN_DE_LA_CRUZ_CHAPARRAL_2",
-    "portada_url": "/assets/img/Overlaped/2_1-ERASMO_JUAN_DE_LA_CRUZ_CHAPARRAL (2).webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/2_1-ERASMO_JUAN_DE_LA_CRUZ_CHAPARRAL (2).webp",
     "almbum_title":  "ERASMO VALENCIA",
     "info_text": [] ,
 "tracks": [
@@ -38,7 +38,7 @@
   },
   {
     "id": "1Y2-ERASMO_JUAN_DE_LA_CRUZ_CHAPARRAL_3",
-    "portada_url": "/assets/img/Overlaped/3_2-ERASMO_JUAN_DE_LA_CRUZ_CHAPARRAL (3).webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/3_2-ERASMO_JUAN_DE_LA_CRUZ_CHAPARRAL (3).webp",
     "almbum_title":  "CHAPARRAL",
     "info_text": [] ,
     "tracks": [
@@ -54,7 +54,7 @@
   },
   {
     "id": "3-NEVADOS",
-    "portada_url": "/assets/img/Overlaped/4_3-NEVADOS.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/4_3-NEVADOS.webp",
     "almbum_title":  "LOS NEVADOS",
     "info_text": [{
       "text_title":"Las montañas",
@@ -73,7 +73,7 @@
   },
   {
     "id": "4-REJO",
-    "portada_url": "/assets/img/Overlaped/5_4-REJO.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/5_4-REJO.webp",
     "almbum_title":  "EL REJO",
 "info_text": [] ,
 "tracks": [
@@ -133,7 +133,7 @@
   },
   {
     "id": "5-FAMILIAS_CAMPESINAS",
-    "portada_url": "/assets/img/Overlaped/6_5-FAMILIAS_CAMPESINAS.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/6_5-FAMILIAS_CAMPESINAS.webp",
     "almbum_title":  "FAMILIAS CAMPESINAS",
 "info_text": [] ,
 "tracks": [
@@ -157,7 +157,7 @@
   },
   {
     "id": "6-CASA DE BAHAREQUE",
-    "portada_url": "/assets/img/Overlaped/7_6-CASA DE BAHAREQUE.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/7_6-CASA DE BAHAREQUE.webp",
     "almbum_title":  "LAS CASAS DE BAHAREQUE",
 "info_text": [{
   "text_title":"Casas campesinas",
@@ -173,7 +173,7 @@
   },
   {
     "id": "7-CULTIVOS_PAPA",
-    "portada_url": "/assets/img/Overlaped/8_7-CULTIVOS_PAPA.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/8_7-CULTIVOS_PAPA.webp",
     "almbum_title":  "EL CULTIVO DE LA PAPA",
 "info_text": [] ,
 "tracks": [
@@ -197,7 +197,7 @@
   },
   {
     "id": "8-MUSICA",
-    "portada_url": "/assets/img/Overlaped/9_8-MUSICA.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/9_8-MUSICA.webp",
     "almbum_title":  "LA MUSICA",
 "info_text": [{
   "text_title":"La música",
@@ -229,7 +229,7 @@
   },
   {
     "id": "9-EDUCACIÓN-ESCUELAS",
-    "portada_url": "/assets/img/Overlaped/10_9-EDUCACION_ESCUELAS.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/10_9-EDUCACION_ESCUELAS.webp",
     "almbum_title":  "LA EDUCACION",
     "info_text": [{
           "text_title":"La Escuela",
@@ -239,7 +239,7 @@
     "tracks": [
           {
             "title": "Educacion Adelina Gutierrez",
-            "track_src": "/assets/media/audio/9-EDUCACIÓN-ESCUELAS/9.Educacion Adelina Gutierrez.mp3"
+            "track_src": "/assets/media/audio/9-EDUCACIÓN-ESCUELAS/9.Educacion-Adelina-Gutierrez.mp3"
           },
           {
             "title": "Adelina Gutierrez",
@@ -265,7 +265,7 @@
   },
   {
     "id": "10-POEMA",
-    "portada_url": "/assets/img/Overlaped/11_10-POEMA.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/11_10-POEMA.webp",
     "almbum_title":  "LA POESIA",
 "info_text": [] ,
 "tracks": [
@@ -285,7 +285,7 @@
   },
   {
     "id": "11- VENADOS",
-    "portada_url": "/assets/img/Overlaped/12_11- VENADOS.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/12_11- VENADOS.webp",
     "almbum_title":  "LOS VENADOS",
     "info_text": [{
       "text_title":"Venado de cola blanca",
@@ -313,7 +313,7 @@
   },
   {
     "id": "12-RUTAS_DE_COMERCIO",
-    "portada_url": "/assets/img/Overlaped/13_12-RUTAS_DE_COMERCIO.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/13_12-RUTAS_DE_COMERCIO.webp",
     "almbum_title":  "LAS RUTAS DE COMERCIO",
 "info_text": [] ,
 "tracks": [
@@ -345,7 +345,7 @@
   },
   {
     "id": "13-SIGNIFICADO_DE_BOLÍVAR_Y_MAÍZ",
-    "portada_url": "/assets/img/Overlaped/14_13-SIGNIFICADO_DE_BOLIVAR_Y_MAIZ.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/14_13-SIGNIFICADO_DE_BOLIVAR_Y_MAIZ.webp",
     "almbum_title":  "BOLIVAR Y EL MAIZ",
 "info_text": [] ,
 "tracks": [
@@ -361,7 +361,7 @@
   },
   {
     "id": "14-ESCOPETA",
-    "portada_url": "/assets/img/Overlaped/15_14-ESCOPETA.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/15_14-ESCOPETA.webp",
     "almbum_title":  "LA ESCOPETA",
 "info_text": [{
   "text_title":"El fusil",
@@ -405,7 +405,7 @@
   },
   {
     "id": "15-CACHO",
-    "portada_url": "/assets/img/Overlaped/16_15-CACHO.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/16_15-CACHO.webp",
     "almbum_title":  "EL CUERNO",
 "info_text": [] ,
 "tracks": [
@@ -429,7 +429,7 @@
   },
   {
     "id": "16-LÍDERES_SOCIALES",
-    "portada_url": "/assets/img/Overlaped/17_16-LIDERES_SOCIALES.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/17_16-LIDERES_SOCIALES.webp",
     "almbum_title":  "LIDERES SOCIALES",
     "info_text": [{
       "text_title":"Líderes sociales",
@@ -465,7 +465,7 @@
   },
   {
     "id": "17-BANDERAS",
-    "portada_url": "/assets/img/Overlaped/18_17-BANDERAS.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/18_17-BANDERAS.webp",
     "almbum_title":  "BANDERAS",
 "info_text": [] ,
 "tracks": [
@@ -489,7 +489,7 @@
   },
   {
     "id": "18-CAMILO_TORRES_Y_CHÉ",
-    "portada_url": "/assets/img/Overlaped/19_18-CAMILO_TORRES_Y_CHE.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/19_18-CAMILO_TORRES_Y_CHE.webp",
     "almbum_title":  "CAMILO TORRES Y EL CHÉ",
 "info_text": [] ,
 "tracks": [
@@ -501,7 +501,7 @@
   },
   {
     "id": "19-ESCOBA-CAMPESINOS_BARRIENDO",
-    "portada_url": "/assets/img/Overlaped/20_19-ESCOBA_CAMPESINOS_BARRIENDO.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/20_19-ESCOBA_CAMPESINOS_BARRIENDO.webp",
     "almbum_title":  "LA ESCOBA",
 "info_text": [] ,
 "tracks": [
@@ -533,7 +533,7 @@
   },
   {
     "id": "20-SÍMBOLOS_IMPERIALISTAS",
-    "portada_url": "/assets/img/Overlaped/21_20-SIMBOLOS_IMPERIALISTAS.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/21_20-SIMBOLOS_IMPERIALISTAS.webp",
     "almbum_title":  "SIMBOLOS IMPERIALISTAS",
 "info_text": [] ,
 "tracks": [
@@ -545,7 +545,7 @@
   },
   {
     "id": "22-CACIQUE_CALARCÁ",
-    "portada_url": "/assets/img/Overlaped/22_22-CACIQUE_CALARCA.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/22_22-CACIQUE_CALARCA.webp",
     "almbum_title":  "EL CACIQUE",
 "info_text": [] ,
 "tracks": [
@@ -557,7 +557,7 @@
   },
   {
     "id": "23-SIA_AGUA",
-    "portada_url": "/assets/img/Overlaped/23_23-SIA_AGUA.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/23_23-SIA_AGUA.webp",
     "almbum_title":  "SIA Y EL AGUA",
 "info_text": [{
   "text_title":"Me Dijeron",
@@ -577,7 +577,7 @@
   },
   {
     "id": "24-GANCHO_Y_AZADON",
-    "portada_url": "/assets/img/Overlaped/24_24-GANCHO_Y_AZADON.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/24_24-GANCHO_Y_AZADON.webp",
     "almbum_title":  "GANCHO Y AZADON",
 "info_text": [] ,
 "tracks": [
@@ -589,7 +589,7 @@
   },
   {
     "id": "PINTURA INDIGENA_CACIQUE_GAITANA",
-    "portada_url": "/assets/img/Overlaped/25_25-PINTURA INDIGENA_CACIQUE_GAITANA.webp",
+    "portada_url": "/assets/img/Overlaped/Epopeya/25_25-PINTURA INDIGENA_CACIQUE_GAITANA.webp",
     "almbum_title":  "CACIQUE GAITANA",
 "info_text": [] ,
 "tracks": [

@@ -1,8 +1,11 @@
+//Esta funcion define el comportamiento de la previsualizacion de los murales en la pantalla principal
+
 document.addEventListener('DOMContentLoaded', function() {
-    const epopeya = document.querySelector('.Epopeya');
-    const soma = document.querySelector('.Soma');
+    const epopeya = document.querySelector('.epopeya');
+    const soma = document.querySelector('.soma');
 
     // Función que aplica el efecto al hermano (target)
+    
     function toggleEffect(targetElement, className, enable) {
         if (enable) {
             targetElement.classList.add(className);

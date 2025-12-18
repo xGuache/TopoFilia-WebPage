@@ -1,0 +1,60 @@
+/*Propiedades del layout para la pagina principal*/
+
+.layout-container{
+    
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15vh 85vh 0px;
+    
+    grid-template-areas:
+        "header header header header"
+        "main main main main";
+
+}
+
+
+@media (max-width: 768px){
+    .layout-container{
+        grid-template-rows: 15vh 85vh 0px;
+    }
+}
+
+
+.layout-container header{
+
+    top:0;
+    
+    grid-area: header;
+    
+    background: rgb(0, 0, 0);
+    
+}
+
+.layout-container main{
+
+    height: 100%;
+
+    grid-area: main;
+
+    background: rgb(255, 255, 255);
+   
+
+}
+
+.layout-container footer{
+    
+    grid-area: footer;
+
+    align-content: center;
+
+    background: rgb(255, 255, 255);
+    
+}
+
+
+
+

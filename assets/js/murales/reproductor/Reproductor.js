@@ -1,40 +1,80 @@
-//Info Track Variables
+// Esta funcion define el comportamiento del reproductor y visualizador de la informacion de los elementos del mural
+// El reproductor estara escondido hasta que se haga click sobre un elemento del mural o "HOTSPOT"
+// Se comporta como un reproductor MP3 que carga albums con varias pistas e informacion adicional, el cual carga la data desde un archivo json
+/*
+
+La estrucuta del JSON esta dada de la siguiente manera:
+
+   "id": "", --- Usado para relacionar la informacion con el HOTSPOT.
+    "portada_url": "", --- Carpeta de la imagen que se cargara cuando se abra el visualizador.
+    "almbum_title":  ", --- El titulo que tendra el visualizador.
+    "info_text": [{ --- Informacion adicional de textos sobre el item.
+
+      "text_title":"", --- Titulo del Texto
+      "text_author":"Autor:  ",  --- Autor del Texto
+      "text_content":""  --- Contenido del texto
+
+      }] ,
+"tracks": [  --- Informacion de los tracks o pistas de audio
+      {
+        "title": "",  --- Titulo del track
+        "track_src": ""  --- Carpeta del track
+      },
+      {
+        "title": "",
+        "track_src": ""
+      }
+    ]
+  },
+*/
+
+
+//Definicion de variables
+
+//Informacion de titulo del album y nombre de la pista de audio
+
 const TitleTrack = document.querySelector('.track-title h1');
 const ArtisName = document.querySelector('.track-title p');
 
-//Progress slidebar Variables
-const Progress_Audio = document.getElementById('Progress_Audio');
+//Barra de progreso
+const Progress_Audio = document.getElementById('progress_audio');
 const Audio_Track = document.getElementById('Audio_Track');
 
-//Buttons Variables
-const Back_btn = document.querySelector('.Controls_Btn  button.Previous');
-const Next_btn = document.querySelector('.Controls_Btn  button.Next');
-const PlayPause_Btn = document.querySelector('.Controls_Btn  button.Play-Pause');
+//Botones de control de audio
+const Back_btn = document.querySelector('.mp3-controls_btn  button.Previous');
+const Next_btn = document.querySelector('.mp3-controls_btn  button.Next');
+const PlayPause_Btn = document.querySelector('.mp3-controls_btn  button.Play-Pause');
 
-//Icon Button
-const PlayPause_icon = document.getElementById('PlayPause_Icon');
+//Boton de play y pausa
+const PlayPause_icon = document.getElementById('playpause_icon');
 
-const TrackList_Container = document.getElementById('TrackList_Container');
+const TrackList_Container = document.getElementById('trackList_container');
 
-// Portada
-const Portada = document.getElementById('track-portada');
+// Portada del album o item del hotspot 
+const Portada = document.getElementById('mp3-track-portada');
 
-
+// Caja del reproductor y visualizer
 const PopMP3 = document.getElementById('MP3');
-const visualizer = document.getElementById('Container-visualizer');
+const visualizer = document.getElementById('mp3-container-visualizer');
 
-
-const text_popup = document.getElementById('popover-info');
+// Informacion adicional el album
+const text_popup = document.getElementById('mp3-popover-info');
 const carpeta = document.getElementById('folder-pop');
+
+
 
 let TrackList= [];
 let AlbumInfo = null;
 
+
+document.addEventListener('DOMContentLoaded', initializeApp());
+
+
+// Carga el contenido del JSON 
+
 async function loadAudioData() {
 
     try {
-        
-        // llamada Json
 
         const response = await fetch('/assets/js/json/visualizer-data.json'); 
         
@@ -51,6 +91,37 @@ async function loadAudioData() {
     }
 };
 
+
+//Valida si existe datos en el JSON y lee los clcik sobre los Hotspot con meta data track-id
+
+async function initializeApp() {
+
+    TrackList = await loadAudioData(); // Esperar a que cargue el JSON 
+
+    if (TrackList && TrackList.length > 0) {
+        
+        //Leer los clicks
+
+        const hotspots = document.querySelectorAll('[data-track-id]');
+        
+        hotspots.forEach(hotspot => {
+
+            hotspot.addEventListener('click', manejarClickHotspot);
+
+        });
+
+        
+    }
+        
+        else {
+        console.error("No hay datos para inicializar.");
+    }
+};
+
+
+
+
+// Carga el contenido del Hotspot el cual se haya clickeado bajo el track-ID Y muestra la interfaz del reproductor
 
 function manejarClickHotspot(event) {
 
@@ -73,52 +144,19 @@ function manejarClickHotspot(event) {
 
         PopMP3.classList.add('mostrar-mp3');
         event.stopPropagation();
+
     } else {
         console.error(`Error: No se encontró información para el ID: ${DOMtrackid}`);
     }
 };
 
 
-async function initializeApp() {
 
-    TrackList = await loadAudioData(); // Esperar a que cargue el JSON 
-
-    if (TrackList && TrackList.length > 0) {
-        
-        //Leer los clicks
-
-        const hotspots = document.querySelectorAll('[data-track-id]');
-        
-        hotspots.forEach(hotspot => {
-
-            hotspot.addEventListener('click', manejarClickHotspot);
-
-        });
-
-        
-    }
-        
-        else {
-        console.log("No hay datos para inicializar.");
-    }
-};
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', initializeApp());
-
-
-
-
-
-
+//Se usa un index para cada pista de audio cargada para poder moverse hacia adelante y atras.
 
 let CurrentTrackIndex = 0;
 
-//TrackList - Update
+//Actualiza la informacion del track list.
 
 function TrackListUpdate (AlbumInfo){
     
@@ -128,7 +166,7 @@ function TrackListUpdate (AlbumInfo){
 
     AlbumInfo.tracks.forEach(( TrackItem, index ) => {
         
-            console.log('cargado los tracks', TrackItem);
+            //console.log('cargado los tracks', TrackItem);
 
             const li = document.createElement('li');
             const LiActive = document.querySelector('#track .active');
@@ -148,6 +186,7 @@ function TrackListUpdate (AlbumInfo){
             }
             
             if (LiActive && TrackList_Container) {
+                
             // 3. Usar scrollIntoView() para hacer visible el elemento
             LiActive.scrollIntoView({
                 behavior: 'smooth', // Animación suave
@@ -163,7 +202,7 @@ function TrackListUpdate (AlbumInfo){
 
 
 
-//Track Information Update
+//Actualiza la informacion de la UI con la infotmacion del Track
 
 function TrackInfoUpdate(AlbumInfo){
 
@@ -171,7 +210,6 @@ function TrackInfoUpdate(AlbumInfo){
         ArtisName.textContent = AlbumInfo.tracks[CurrentTrackIndex].title;
         Audio_Track.src = AlbumInfo.tracks[CurrentTrackIndex].track_src;
         TrackListUpdate(AlbumInfo);
-        //Audio_Track.addEventListener('loadeddata', function(){});
              
 };
 
@@ -182,7 +220,7 @@ Audio_Track.addEventListener('loadedmetadata', function(){
 
 
 
-// Play Pause Behavior
+// Maneja el comportamiento del play y pausa
 
 PlayPause_Btn.addEventListener('click', PlayPause);
 
@@ -195,7 +233,8 @@ function PlayPause(){
     }
 };
 
-//// Play Pause Track and Change Icon
+// Maneja el boton de play y pausa
+
 function PlayTrack(){
     Audio_Track.play();
     PlayPause_icon.setAttribute('src', "/assets/img/Reproductor/Pausa SONIDO.webp");
@@ -209,7 +248,7 @@ function PauseTrack(){
 };
 
 
-//Slider Behavior
+// Comportamiento de barra de progreso
 
 Audio_Track.addEventListener('timeupdate',function(){
     if(!Audio_Track.paused){
@@ -230,7 +269,7 @@ Progress_Audio.addEventListener('change', function(){
 })
 
 
-// Next Back Button Behavior
+// Comportamiento de boton de siguiente y anterior audio
 
 Next_btn.addEventListener('click', NextTrack); 
 
@@ -245,27 +284,16 @@ function NextTrack(){
 };
     
 function PreviousTrack(){
-    //if(CurrentTrackIndex!=0){
+    
         CurrentTrackIndex = (CurrentTrackIndex - 1 + AlbumInfo.tracks.length) % AlbumInfo.tracks.length;
-    //}
+   
     TrackInfoUpdate(AlbumInfo);
     PlayTrack();
     
 };
 
 
-// ABRIR TEXTO
-
-
-
-
-
-
-/*
-const text_tit = document.getElementById('text_title');
-const text_aut = document.getElementById('text_author');
-const text_cont = document.getElementById('text_content');
-*/
+//muestra el icono de carpeta, si existe informacion para mostrar
 
 function MostrarCarpeta(AlbumInfo){
 
@@ -275,25 +303,29 @@ function MostrarCarpeta(AlbumInfo){
     } 
 }
 
+//Carga informacion adicional del album si existe.
+
 function cargaContenidoTexto(AlbumInfo) {
 
     if (AlbumInfo && AlbumInfo.info_text && AlbumInfo.info_text.length > 0){
             
-                document.getElementById('text_title').innerHTML = AlbumInfo.info_text[0].text_title;
-                document.getElementById('text_author').innerHTML = AlbumInfo.info_text[0].text_author;
-                document.getElementById('text_content').innerHTML = AlbumInfo.info_text[0].text_content.replace(/\n/g, '<br>');
-
-            //text_popup.classList.add('mostrar-mp3');
+                document.getElementById('mp3-text_title').innerHTML = AlbumInfo.info_text[0].text_title;
+                document.getElementById('mp3-text_author').innerHTML = AlbumInfo.info_text[0].text_author;
+                document.getElementById('mp3-text_content').innerHTML = AlbumInfo.info_text[0].text_content.replace(/\n/g, '<br>');
   
         }
 };
 
 
+// Evita que el click se propague a otros elementos, lo mantiene dentro del visualizer
+
 visualizer.addEventListener('click', (e) => {
     e.stopPropagation();
-    console.log("Clic dentro del visualizer: Propagación detenida para el cierre externo.");
 });
 
+
+
+// Muestra y esconde el visualizer o reproductor MP3
 
 document.addEventListener('click', (e) => {
 
@@ -315,6 +347,8 @@ document.addEventListener('click', (e) => {
 });
 
 
+// Muestra el contenido de texto al hacer click sobre la carpeta
+
 carpeta.addEventListener('click', (e) => {  
         e.stopPropagation(); 
         text_popup.classList.add('mostrar-mp3');
@@ -322,14 +356,6 @@ carpeta.addEventListener('click', (e) => {
 
 
 
-    
-/*window.addEventListener('resize', () => {
-        
-
-        if (PopMP3.classList.contains('mostrar-mp3') || text_popup.classList.contains('mostrar-mp3') ) {
-            PopMP3.classList.remove('mostrar-mp3');
-        }
-    });*/
 
 
 

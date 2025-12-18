@@ -1,18 +1,23 @@
-header{
+/* Propiedades del navbar para la pagina principal y pagina el laboratorio */
+
+.header-main{
     position: sticky;
-    z-index: 1060;
     top: 0;
-    left: 0;      ;
+    left: 0;    
+
+    z-index: 1060;
 }
 
 
 .headnav-main {
     
+    top: 0;
+
     padding: 0px;
     margin: 0px;
     height: 100%;
     max-height: 100%;
-    top: 0;
+    
     z-index: 1050;
 }
 
@@ -32,62 +37,60 @@ header{
 
 .headnav{
 
+    height: 100%;
+    max-height: 100%;
+    padding: 0px;
+    margin: 0px;
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    gap:0;
     align-items: center;
     box-sizing: border-box;
-    
-    gap:0;
-
-    height: 100%;
-    max-height: 100%;
-    
-    
-    padding: 0px;
-    margin: 0px;
-
 }
 
+
+
 .headnav-item{
-    background: rgb(0, 0, 0);   
-    border-style: solid;
-    border: black;
-    list-style: none;
-    
-    justify-content: center;
-    align-content: center;
-    padding: 5px;
 
     margin: 0;
-
-    flex-grow: 1;
-    flex-shrink: 1;
-
-
-    box-sizing: border-box;
+    padding: 5px;
     height: 100%;
     max-height: 50%;
+    box-sizing: border-box;
+    border-style: solid;
+    border: black;
+    
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+    align-content: center;
+
+    list-style: none;
+
+    background: rgb(0, 0, 0);   
     
 }
 
 
 .headnav-item:first-child{
+    
+    padding-left: 10%;
+    align-items: center;
+
     flex-basis:40%;
     flex-grow: 1;
-    flex-shrink: 1;
-    align-items: center;
-    padding-left: 10%;
-    
+    flex-shrink: 1;  
 }
 
 .headnav-link{
     
-    font-family: "Source Sans 3", sans-serif;
     display: block;
     color: rgb(222, 222, 222);
     text-decoration: none;
+
+    font-family: "Source Sans 3", sans-serif;
     font-size: clamp(0.5rem, 2vw, 1rem);
     text-align: center; 
     transition: all 0.3s ease-out;
@@ -108,9 +111,11 @@ header{
 }
 
 .headnav-item .headnav-img{
+    
     height: 100%; 
     width: 100%;
     max-height: 100%;
+
     display: block;
     text-align: left;
 

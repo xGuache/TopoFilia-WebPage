@@ -1,0 +1,100 @@
+/*Propiedades para los 2 murales */
+
+.mural-scroll-container{
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+    max-width: auto;
+    height: 100vh;
+    width: 100vw;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+   
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    pointer-events: all;
+    
+    -webkit-overflow-scrolling: touch;
+    background-image: url(/assets/img/Background/Pared\ del\ mural\ completo.webp);
+
+}
+
+.mural-scroll-container-soma{
+    display: flex;
+    flex-wrap: nowrap;
+
+    align-items: center;
+}
+
+
+.mural-container{
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+    width: fit-content;
+}
+
+.mural-container-soma{
+    position: relative;
+    
+    top: 0px;
+    left: 0px;
+
+    height: 90%;
+
+    width: fit-content;
+     
+}
+
+/*Ajusta la imagen a verticalmente sobre la pantalla*/
+
+.img-mural
+{   
+     max-height: 100vh;
+     width: auto;
+
+     display: block;
+}
+
+.img-mural-soma{
+
+    height: 100%;
+}
+
+
+.hotspot-container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    padding: 0px;
+    margin: 0px;
+    
+    height: 100%;
+    width: 100%; 
+}
+
+.position-hotspot{
+    position:absolute;
+
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+
+.inside {
+    height: 100%;
+    width: 100%;
+
+    display: block;
+
+    object-fit:contain;
+
+}

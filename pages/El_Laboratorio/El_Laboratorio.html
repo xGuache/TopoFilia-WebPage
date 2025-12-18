@@ -1,7 +1,4 @@
 
-
-<!--cambiar REJO Y ASADOR, AGREGAR HOVER A REJO, QUITAR HOVER PAREJA-->
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,14 +7,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>ORALITURA SUMAPAZ</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/ElLaboratiorio.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/style.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/navbar.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/modal-main.css'>
-
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/main.css'>
     <!--Font-->
-
-    <link rel='stylesheet' type='text/css' media='screen' href='/assets/css/text-style.css'>
     <link rel="stylesheet" href="https://use.typekit.net/sib7yfi.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,8 +31,11 @@
     </div>
 
     <!---->
-    <section id="root" class="Container">
-        <header>
+    <section id="root">
+
+    <section id ="lab-container" class="lab-container">
+
+        <header class="header-main">
             <!---->
             <nav id="headnav-main" class="headnav-main">
                 <ul class="headnav">
@@ -69,9 +63,9 @@
 
         <main id="main-page">
             <!---->
-            <section id="El-Laboratorio" class="Container-Info">
+            <section id="el-laboratorio" class="lab-container-info">
 
-                <div class="Main-Info">
+                <div class="main-Info">
 
                     <h1>TRAZOS SONOROS DE LA HISTORIA: VISIONES Y VOCES DE LA ORALITURA PARAMUNA</h1>
                     <p>
@@ -93,7 +87,7 @@
                     </p>
                 </div>
 
-                <div class="Secondary-Info">
+                <div class="secondary-info">
                     <h3>
                         LABORATORIO DE CO-CREACIÓN ARTEFACTUM EN RURALIDAD - ORALITURA
                     </h3>
@@ -101,26 +95,27 @@
             </section>
 
             <!-- Modales -->
-            <section class=Container-Cards>
 
-                <div id="popover-info" class="modal-pop">
+            <section class=lab-container-cards>
 
-                    <div id="pop-cont" class="pop-cont">
+                <div id="lab-popover-info" class="lab-modal-pop">
 
-                        <div class="pop-cont-item pop-cont-img">
-                            <img id="popover_img" class="popover_img" src="" alt="ICON">
+                    <div id="lab-pop-cont" class="lab-pop-cont">
+
+                        <div class="lab-pop-cont-item lab-pop-cont-img">
+                            <img id="lab-popover_img" class="lab-popover_img" src="" alt="ICON">
                         </div>
 
-                        <div class="pop-cont-item pop-cont-text">
-                            <h2 id="popover_nombre"></h2>
-                            <h2 id="popover_identitario"></h2>
-                            <p id="popover_cuerpo"></p>
+                        <div class="lab-pop-cont-item lab-pop-cont-text">
+                            <h2 id="lab-popover_nombre"></h2>
+                            <h2 id="lab-popover_identitario"></h2>
+                            <p id="lab-popover_cuerpo"></p>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="Cards-grid">
+                <div class="cards-grid">
 
                     <div class="cards-item" data-modal="Mari">
                         <img src="/assets/img/Fotos/1.ANGELA-MARISELA-ROMERO.webp" alt="ICON">
@@ -183,7 +178,7 @@
             <!---->
             <div>
                 <h1 class="footer-title">Una iniciativa de:</h1>
-                <div class="Container-footer-logo">
+                <div class="container-footer-logo">
 
                     <a id="idartes" href="https://www.idartes.gov.co/es" class="footer-logo-item">
                         <div>
@@ -201,7 +196,7 @@
 
             <div>
                 <h1 class="footer-title">Aliados:</h1>
-                <div class="Container-footer-logo">
+                <div class="container-footer-logo">
                     <a id="juventud-sumapaceña"
                         href="https://www.facebook.com/colectivojuventudsumapacena/?locale=es_LA"
                         class="footer-logo-item">
@@ -242,11 +237,11 @@
             </div>
         </footer>
         <!---->
-
+        </section>
     </section>
-    <script src="/assets/js/nav.js"></script>
-    <script src="/assets/js/loadscreen.js"></script>
-    <script type="module" src="/assets/js/popover-cards.js"></script>
+    <script src="/assets/js/ui/nav.js"></script>
+    <script src="/assets/js/ui/loadscreen.js"></script>
+    <script type="module" src="/assets/js/laboratorio/ui/modal-laboratorio.js"></script>
 
 </body>
 

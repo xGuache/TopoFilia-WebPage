@@ -1,5 +1,6 @@
-const contenedorScroll = document.getElementById('Scroll-Container');
+// Esta funcion define el comportamiento de la posicion del scroll al abrir el mural para qeu se ubique en la mitad de este
 
+const contenedorScroll = document.getElementById('mural-scroll-container');
 
 document.addEventListener('DOMContentLoaded', (posicionarScroll()))
     

@@ -1,6 +1,6 @@
-# 🌿 TopoFilia – WebPage
+# TopoFilia – WebPage
 
-## 🧠 Descripción general
+## Descripción general
 
 **TopoFilia – WebPage** es una **página web estática e interactiva** cuyo objetivo es presentar una **infografía digital sobre la oralitura del Sumapaz**, a partir de murales realizados en el territorio por el grupo de trabajo **"El Laboratorio"**.
 
@@ -10,60 +10,83 @@ El sitio está desarrollado sin frameworks, usando únicamente **HTML, CSS y Jav
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
-/TopoFilia-WebPage/
+TopoFilia-WebPage/
 ├── index.html
+├── 404.html
+├── README.md
+│
 ├── pages/
-│   ├── El Laboratorio/
+│   ├── El_Laboratorio/
+│   │   └── El_Laboratorio.html
+│   │
 │   └── murales/
 │       ├── Epopeya/
 │       │   └── Epopeya.html
 │       └── Soma/
 │           └── Soma.html
+│
 ├── assets/
 │   ├── css/
-│   │   ├── main.css
-│   │   ├── style.css
-│   │   ├── text-style.css
-│   │   ├── modal-main.css
-│   │   ├── navbar.css
-│   │   ├── navbar_murales.css
-│   │   ├── reproductor.css
-│   │   ├── ElLaboratorio.css
-│   │   ├── Mural_Epopeya.css
-│   │   ├── Mural_Soma.css
-│   │   ├── Hotspots_Epopeya.css
-│   │   └── Hotspots_Soma.css
+|   |   ├── main.css
+│   │   ├── base/
+│   │   │   ├── style.css
+│   │   │   └── text-style.css
+│   │   │
+│   │   ├── ui/
+│   │   │   ├── navbar-main.css
+│   │   │   ├── layout-main.css
+│   │   │   ├── navbar-murales.css
+│   │   │   ├── modal-laboratorio.css
+│   │   │   ├── reproductor.css
+│   │   │   ├── el-laboratorio.css
+│   │   │   └── gallery-main.css
+│   │   │
+│   │   └── murales/
+│   │       ├── mural-main.css
+│   │       ├── mural-epopeya.css
+│   │       ├── mural-soma.css
+│   │       ├── hotspots-position-epopeya.css
+│   │       └── hotspots-position-soma.css
 │   ├── js/
-│   │   ├── route.js
-│   │   ├── nav.js
-│   │   ├── navmurales_lateral.js
-│   │   ├── scroll.js
-│   │   ├── loadscrenn.js
-│   │   ├── animacion.js
-│   │   ├── mural.js
-│   │   ├── gallery.js
-│   │   ├── Reproductor.js
-│   │   ├── popover-cards.js
-│   │   ├── pop-data.js
-│   │   ├── pop-soma.js
+│   │   ├── ui/
+│   │   │   ├── nav.js
+│   │   │   ├── gallery.js
+│   │   │   ├── loadscreen.js
+│   │   │   └── navmurales.js
+│   │   │
+│   │   ├── laboratorio/
+│   │   │   └── ui/
+│   │   │       ├── modal-laboratorio.js
+│   │   │       └── pop-data.js
+│   │   │
+│   │   ├── murales/
+|   |   |   └── reproductor/
+|   │   │             └── Reproductor.js
+│   │   │   ├── animacion.js
+│   │   │   ├── modal-soma.js
+│   │   │   ├── miral.js
+│   │   │   └── scroll-position.js
+│   │   │
 │   │   └── json/
+│   │       ├── visualizer.json
+│   │       └── SOMA.json
+│   │
 │   ├── img/
+│   │
 │   ├── fonts/
-│   │   └── FFGoodPro/
+│   │
 │   └── media/
 │       ├── audio/
 │       └── video/
-└── README.md
-```
 
 ---
 
-## 📌 Descripción de secciones y páginas
+##  Descripción de secciones y páginas
 
-### 🏠 Página inicial (`index.html`)
+### Página inicial (`index.html`)
 
 * Página de entrada al proyecto.
 * Presenta una **previsualización de dos murales** realizados por el grupo *El Laboratorio*.
@@ -71,7 +94,7 @@ El sitio está desarrollado sin frameworks, usando únicamente **HTML, CSS y Jav
 
 ---
 
-### 🧪 Subpágina: **El Laboratorio**
+### Subpágina: **El Laboratorio**
 
 * Describe el proyecto **Oralitura del Sumapaz**.
 * Presenta información conceptual del trabajo.
@@ -79,7 +102,7 @@ El sitio está desarrollado sin frameworks, usando únicamente **HTML, CSS y Jav
 
 ---
 
-### 🖼️ Subpágina: **La Epopeya de un pueblo guerrero** (`Epopeya.html`)
+### Subpágina: **La Epopeya de un pueblo guerrero** (`Epopeya.html`)
 
 * Mural interactivo de carácter narrativo y sonoro.
 * Cada elemento visual del mural es clickeable.
@@ -94,7 +117,7 @@ Este mural enfatiza la experiencia sonora como eje principal de la interacción.
 
 ---
 
-### 🍲 Subpágina: **La Cocina Sumapaceña** (`Soma.html`)
+### Subpágina: **La Cocina Sumapaceña** (`Soma.html`)
 
 * Mural interactivo enfocado en elementos gastronómicos y culturales.
 * Al hacer clic en los elementos:
@@ -105,7 +128,7 @@ Este mural enfatiza la experiencia sonora como eje principal de la interacción.
 
 ---
 
-## 🧩 Flujo de navegación
+## Flujo de navegación
 
 1. El usuario accede a `index.html`.
 2. Visualiza los murales disponibles.
@@ -115,7 +138,7 @@ Este mural enfatiza la experiencia sonora como eje principal de la interacción.
 
 ---
 
-## 🎨 Recursos multimedia
+## Recursos multimedia
 
 El proyecto incorpora distintos formatos multimedia:
 
@@ -127,7 +150,7 @@ Todos los recursos están organizados dentro de `assets/media/`.
 
 ---
 
-## 💡 Convenciones de desarrollo
+## Convenciones de desarrollo
 
 ### HTML
 
@@ -136,13 +159,16 @@ Todos los recursos están organizados dentro de `assets/media/`.
 
 ### CSS
 
-* Estilos centralizados en `style.css`.
+* Estilos centralizados en `main.css`.
 * Organización por secciones del sitio.
 
 ```css
-/* ===== Murales interactivos ===== */
-.mural-item {
-  cursor: pointer;
+/* descripcion del elemento */
+.item {
+  box-position: ;
+  box-size: ;
+  display-behavior: ;
+  style: ;
 }
 ```
 
@@ -162,45 +188,72 @@ document.querySelectorAll('.mural-item').forEach(item => {
 
 ---
 
-## 🧪 Pruebas realizadas
+## Pruebas realizadas
 
 * Navegación entre páginas.
 * Interacción con elementos de los murales.
 * Reproducción de audio.
-* Visualización correcta en navegadores modernos.
-
-Pendiente:
-
-* Pruebas exhaustivas en dispositivos móviles.
+* Visualización correcta en navegadores web Chrome | Firefox | Edge.
+* Pruebas en dispositivos móviles.
 * Optimización de carga de archivos multimedia.
+
+##
+* Comportamiento de UI en navegador apple Safari | Safari Mobile
 
 ---
 
-## ⚙️ Requisitos
+## Requisitos
 
 * Navegador web moderno (Chrome, Firefox, Edge).
 * No requiere instalación de dependencias.
 
 ---
 
-## 🚀 Ejecución del proyecto
+## Despliegue del proyecto
 
-1. Clonar o descargar el repositorio.
-2. Abrir el archivo `index.html` en el navegador.
-3. Navegar por las distintas secciones del sitio.
+1. Se utilizo servidor gratuito de despliegue https://www.netlify.com/
+2. Se utilizo github como servidor de almacenamiento del projecto
+3. Se utilizo html css y js base para el desarrollo sin uso de frameworks
+4. No se utilizo dominio personalizado
+
+
+## Mantenimiento del proyecto
+
+* Requisitios: 
+  - Visual Studio Code (https://code.visualstudio.com/download)
+    |- Local Live Server o Visual Studio Live Server (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+  - terminal git (https://git-scm.com/install/) - 
+  - Navegador web
+
+1. Acceder a github con las credenciales asignadas https://github.com/artefactum-oralitura/oralitura 
+      usuario: artefactum-oralitura | contraseña:******
+
+2. *  Clonar repositiorio de github url:
+      - Ir al perfil del repositiorio oralitura
+      - Dar clic en el boton <code> copiar la url 
+      - Abrir la terminal cmd o git - ejecutar los siguientes comandos.
+      - Configurar perfil de git
+      -     git config --global user.name "nombre de github"
+      -     git config --global user.email "correo de github"
+      - Ubicarse en la carpeta donde se almacenara el projecto 
+      -     cd /Documents/proyecto
+      - Clonar el repositorio 
+      -     git clone https://github.com/artefactum-oralitura/oralitura.git
+
+2. Abrir la carpeta donde se clono el repositorio con visual studio code
 
 ---
 
-## 🕰️ Historial de versiones
+## Historial de versiones
 
 **v1.0**
 
 * Estructura base del proyecto.
 * Implementación de murales interactivos.
-* Integración de audio y contenido textual.
+* Integración de reproductor de audio y visualizador de contenido multimedia y texto.
 
 ---
 
-## 📝 Notas finales
+## Notas finales
 
 Este proyecto combina diseño visual, narrativa oral y desarrollo web para preservar y difundir la memoria cultural del Sumapaz. La documentación debe actualizarse ante cualquier cambio estructural o conceptual del sitio.

@@ -1,0 +1,42 @@
+/*Propiedades para las animaciones de los hotspot del mural La Epopeya de un Pueblo*/
+
+.epopeya_container{
+    height: 100%;
+    width: 100%;
+}
+
+#epopeya_container .position-hotspot .inside:hover{
+
+    filter: brightness(1.2) drop-shadow(0 0 5px yellow) !important;
+    transform: translateY(4px) !important;
+
+}
+
+
+
+@keyframes pulse-glow-epo {
+    0% {
+        filter: brightness(0.9) drop-shadow(0 0 5px yellow);; 
+        opacity: 1;
+    }
+    50% {
+         filter: brightness(1.5) drop-shadow(0 0 5px yellow); 
+        opacity: 1; 
+    }
+
+    75% {
+         filter: brightness(2) drop-shadow(0 0 5px yellow); 
+        opacity: 1; 
+    }
+
+    100% {
+         filter: brightness(0.9) drop-shadow(0 0 5px yellow); 
+        opacity: 1;
+    }
+}
+
+
+#epopeya_container .position-hotspot .pulsating {
+    animation: pulse-glow-epo 1s infinite alternate ease-in-out; 
+}
+

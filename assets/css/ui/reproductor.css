@@ -1,66 +1,69 @@
-.Container-rep-pop{
+/* Propiedades de la ventana modal con el reproductor mp3 y los hotspot para el mural La Epopeya */
+
+.mp3-container-rep-pop{
+
     position: fixed;
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 
     display: flex;
     align-content: center;
 
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    box-sizing: border-box;
-    z-index: 1070;
-
     background-color: rgba(46, 46, 46, 0.2);
     backdrop-filter: blur(10px);
-    display: none;
     
-
     transition: opacity 0.3s ease-in-out, display 0.3s ease-in-out;
 
-    
+    z-index: 1070;
 
+    display: none;
 }
 
 
-.modal-pop{
+.mp3-modal-pop{
+    
     position: fixed;
 
     width: 80%;
     height: 80%;
     z-index: 1080;
+
     display: none;
-
-     transform: scale(0.9); 
-     transition: transform 3s ease-in-out;
-
-
     align-content: center;
+
+    transform: scale(0.9); 
+    transition: transform 3s ease-in-out;   
 }
 
-.pop-cont{
-    align-content: center;
-    
+.mp3-pop-cont{
+       
     height: 100%;
     width: 100%;
-    
+
+    align-content: center;
+
     border-radius: 20px;
     background-image: url(/assets/img/Background/Fondo-papel5.webp);
     background-size: cover;
 }
 
-.pop-tex-head{
+.mp3-pop-tex-head{
+
     display: flex;
     justify-content: space-between;
 }
 
-.pop-cont-item p{
+.mp3-pop-cont-item p{
     font-family: 'FF Good Pro';
     text-align: justify;
     color: black;
 }
 
-.pop-cont-item h5{
+.mp3-pop-cont-item h5{
     font-family: 'FF Good Pro';
     text-align: justify;
     color: black;
@@ -68,25 +71,27 @@
 
 
 hr {
-    
-    border: none; 
-    border-top: 4px solid #333;
-   
+    width: 100%; 
     margin-top: 15px; 
     margin-bottom: 20px;
     
-    width: 100%; 
+    border: none; 
+    border-top: 4px solid #333;
+    
 }
 
-.text-cont-contain{
-    height: 80%;
-    max-height: 100%;
+.mp3-text-cont-contain{
+
+    height: auto;
+    max-height: 60%;
+    box-sizing: border-box;
+
     overflow-y: scroll;
     scrollbar-width: none;
-    box-sizing: border-box;
+    
 }
 
-.pop-cont-item h2{
+.mp3-pop-cont-item h2{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
@@ -94,11 +99,11 @@ hr {
     font-size: clamp(1rem, 3vw, 3rem);
 
 }
-.pop-cont-item{
+.mp3-pop-cont-item{
     color: black;
     height: 100%;
     box-sizing: border-box;
-    padding: 10%;
+    padding: 30px;
     text-align: justify;
     font-size: clamp(1rem, 1vw, 2rem);
     color: black;
@@ -112,11 +117,14 @@ hr {
 }
 
 
-.album-information{
+.mp3-album-information{
+
     height: 20%;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
+
     background-color: rgba(96, 56, 0, 0.1);
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
     border-radius: 20px;
@@ -124,25 +132,21 @@ hr {
 
 
 
-.Container-visualizer{
+.mp3-container-visualizer{
 
+    padding: 2%;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
     justify-self: center;
-
     justify-content: center;
-
     align-items: center;
 
-    width: 80%;
-    height: 80%;
-
     background-color: rgba(76, 36, 1, 0.4);
-    border-radius: 20px;
-    padding: 2%;
-
     
 }
 
@@ -150,88 +154,98 @@ hr {
 
 
 
-.track-portada-cont{
-        align-items: center;
-        height: 100%;
-        max-height: 100%;
-        max-width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-        border-radius: 50px;
+.mp3-track-portada-cont{
+
+    padding: 10px;
+
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 50px;
+
+    align-items: center;
 }
 
-#track-portada{
-   
-    object-fit: contain;
+#mp3-track-portada{
+
     height: 100%;
     max-width: 100%;
     max-height: 100%;
+   
+    object-fit: contain;
 }
 
 
 
 @media (max-width:738px){
   
-    .Container-reproductor{
-      width: 80% !important;
-      flex-basis: 60%;
-      height: 60% !important;
+    .mp3-container-reproductor{
+
+        width: 80% !important;
+        height: 60% !important;
+        
+        flex-basis: 60%;
     }
 
-    .Container-content-media{
-    height: 40%;
-    max-height: 40% !important;
-    flex-basis: 100% !important;
-    max-width: 100% !important;
+    .mp3-container-content-media{
+
+        height: 40%;
+        max-height: 40% !important;
+        max-width: 100% !important;
+
+        flex-basis: 100% !important;
+
     }
 }
 
 
 
-.Container-content-media{    
-    justify-items: center;
-    flex-shrink: 1;
+.mp3-container-content-media{  
+
     height: 100%;
     width: 40%;
     max-width: 40%;
     max-height: 100%;
+    
+    flex-shrink: 1;
     flex-basis: 40%;
+    justify-items: center;
 }
 
 
-.Container-reproductor{
-
-    flex-grow: 1;
-    flex-shrink: 1;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 10px;
+.mp3-container-reproductor{
 
     padding: 10px;
-    justify-self: center;
+
     width: 60%;
     height: 90%;
     max-height: 90%;
     max-width: 90%;
     box-sizing: border-box;
-
-
-
     border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: 10px;
+    justify-self: center;
+    
+    
     background-color: rgba(46, 46, 46, 0.2);
     backdrop-filter: blur(10px);
 }
 
 .trackinfo{
-    
+
+    height: 20%;
+    max-width: 100%;
+
     display: flex;
     align-items: center;
     flex-direction: row;
-    height: 20%;
-    max-width: 100%;
+    
 }
 
 .track-title{
@@ -240,17 +254,23 @@ hr {
 }
 
 .track-title h1{
+    margin: 0;
+    padding: 0;
+
     text-align: justify;
     font-weight: bold;
     font-style: italic;
     font-size: clamp(1rem, 2vw, 5rem);
     color: whitesmoke;
-    margin: 0;
-    padding: 0;
+    
 }
 
 
 .track-title p{
+
+    margin: 0;
+    padding: 0;
+
     font-optical-sizing: auto;
     font-weight:normal;
     font-style: normal;
@@ -258,14 +278,14 @@ hr {
     color: whitesmoke;
     text-align: justify;
 
-       margin: 0;
-    padding: 0;
+       
 }
 
 .folder-pop{
-    flex-basis: 20%;
     height: 100%;
     width: 30%;
+
+    flex-basis: 20%;
     align-content: center;
     display: none;
     text-align: center;
@@ -284,7 +304,7 @@ hr {
 
 
 
-.__slider {
+#mp3-controls_btn .__slider {
 
     -webkit-appearance: none;
     appearance: none;
@@ -299,34 +319,34 @@ hr {
     transition: opacity .2s;
 }
  
-.__slider :hover {
+#mp3-controls_btn .__slider :hover {
   opacity: 1; /* Fully shown on mouse-over */
 }
-.__slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  background: url('/assets/img/Reproductor/SliderBar.webp') no-repeat center center; 
-  width: 50px;
-  height: 50px;
-  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+#mp3-controls_btn .__slider::-webkit-slider-thumb {
 
-  background-size: 90%;
+    width: 50px;
+    height: 50px;
+    background-size: 90%;
+
+    -webkit-appearance: none;
+    appearance: none;
+    background: url('/assets/img/Reproductor/SliderBar.webp') no-repeat center center; 
+
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+    
 
 }
 
-#Controls_Btn{
+#mp3-controls_btn{
+
+    box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
-
     flex-grow: 1;
-
     justify-content: space-around;
     flex-wrap: nowrap;
-
     gap: 2%;
-
-    box-sizing: border-box;
 
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
 }
@@ -336,7 +356,8 @@ hr {
 
 
 
-.--Controls-st{
+.--controls-st{
+
     background-color: rgba(235, 183, 42, 0.1);
     backdrop-filter: blur(5px);
     border-style: solid;
@@ -346,22 +367,18 @@ hr {
 
 
 .reproducer{
-    display: flex;
-    
-    flex-grow: 1;
-    
-    flex-direction: row;
-    
-    align-items: center;
-    
-    justify-content: space-around;
-    
-    flex-wrap: nowrap;
-    
 
     height: 50%;
     width: 100%;
     box-sizing: border-box;
+
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
 }
 
 
@@ -372,6 +389,7 @@ hr {
     flex-shrink: 1;
     justify-content: center;
     align-items: center;
+
     -webkit-appearance: none;
     opacity: 0.9;
     appearance: none;
@@ -388,9 +406,12 @@ hr {
 }
 
 .rep_button img{
-    object-fit: contain;
+    
     max-height: 100%;
     width: 100%;
+
+    object-fit: contain;
+    
 }
 
 /*#Play-Pause{
@@ -398,7 +419,7 @@ hr {
             height: 50px;
          }*/
 
-#Controls_Btn img{
+#mp3-controls_btn img{
     background-color: #644e06;
     border-style: solid;
     border-color: #b98f05;
@@ -406,48 +427,46 @@ hr {
     
 }
 
-#Controls_Btn button:hover{
+#mp3-controls_btn button:hover{
     opacity: 2;
 }
 
-#Controls_Btn button:active{
+#mp3-controls_btn button:active{
     box-shadow: 0 2px rgba(0, 0, 0, 0.1);
     transform: translateY(1px);
 }
 
-#Track_List {
+#track_list {
+    
+    flex-grow: 1;
 
     overflow-y:scroll;
     scrollbar-width: none;
     overflow-x: hidden;
-    flex-grow: 1;
+   
 
 }
 
 
-#Track_List .ListItems{
-
-    width: 100%;
-
-    display: flex;
-
-    max-height: 100%;
-
-    gap: 10px;
+#track_list .mp3-listitems{
 
     margin: 0;
     padding: 0;
-
-    flex-direction: column;
+    width: 100%;
+    max-height: 100%;
 
     box-sizing: border-box;
     border-radius: 10px;
+
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
 
     list-style-type: none;
     scroll-behavior: smooth;
 }
 
-.Track_List-bg{
+.track_list-bg{
     border-color: rgba(95, 56, 1, 0.2);
     border-style: solid;
 
@@ -458,47 +477,47 @@ hr {
     gap: 3px;
 }
 
-.ListItems::-webkit-scrollbar{
+.mp3-listitems::-webkit-scrollbar{
     width: 0;
 }
 
-.ListItems::-webkit-scrollbar-track{
+.mp3-listitems::-webkit-scrollbar-track{
     background-color: rgba(0, 0, 0, 0.1);
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
     border-radius: 10px;
 }
 
-.ListItems::-webkit-scrollbar-thumb{
+.mp3-listitems::-webkit-scrollbar-thumb{
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-.ListItems::-webkit-scrollbar-corner{
+.mp3-listitems::-webkit-scrollbar-corner{
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-.ListItems::-webkit-scrollbar-thumb:hover{
+.mp3-listitems::-webkit-scrollbar-thumb:hover{
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
 
-.ListItems li{
-    flex-grow: 1;
-    display: block;
+.mp3-listitems li{
+
+    padding: 5px;
     height: 40%;
     width: 98%;
-    padding: 5px;
-
-
+    
+    flex-grow: 1;
+    display: block;
+    
     font-family: "FF Good Pro";
     font-weight:normal;
     font-style: normal;
     font-size: clamp(0.8rem, 1vw, 2rem);
     color: whitesmoke;
     text-justify: distribute;
-
 
     border-radius: 10px;
     border-style: solid;
@@ -511,11 +530,11 @@ hr {
     filter: drop-shadow(2px 2px 5px rgba(110, 110, 110, 0.5));
 }
 
-.ListItems li:hover{
+.mp3-listitems li:hover{
     background-color: rgba(243, 189, 118, 0.3);
 }
 
-.ListItems li.active{
+.mp3-listitems li.active{
     background-color: rgba(243, 189, 118, 0.3);
     transform: translateY(2px);
 }

@@ -1,13 +1,16 @@
+//Esta funcion define el comportamiento de los ventanas modales para el visualizador de informacion sobre el mural de "La cocina sumapaceña by SOMA"
 
-const pop_cont = document.getElementById('pop-cont');
-const Portada = document.getElementById('track-portada');
-const text_popup = document.getElementById('popover-info');
+const pop_cont = document.getElementById('soma-pop-cont');
+const Portada = document.getElementById('soma-track-portada');
+const text_popup = document.getElementById('soma-popover-info');
 
 let TextosData = null;
 
 let TextosCompletos = {};
 
 
+
+//Se carga la data de cada HOTSPOT en un JSON
 
 async function LoadData_Soma() {
 
@@ -33,6 +36,7 @@ async function LoadData_Soma() {
 };
 
 
+//Carga la data del HOTSPOT clickeado y muestra el visualizador
 
 function manejarClickHotspot(event) {
 
@@ -43,13 +47,13 @@ function manejarClickHotspot(event) {
 
     TextosData = TextosCompletos[DOMobjectid];
 
-    console.log("se cargo:", TextosData);
+    //console.log("se cargo:", TextosData);
 
    if (TextosData) {
 
         Portada.src = TextosData.img_src;      
         cargaContenidoTexto(TextosData);
-        text_popup.classList.add('mostrar');
+        text_popup.classList.add('mostrar-pop-soma');
 
     } else {
         console.error(`Error: No se encontró información para el ID: ${DOMobjectid}`);
@@ -58,6 +62,7 @@ function manejarClickHotspot(event) {
 
 
 
+// Verifica si existen datos en el JSON
 
 async function initializeApp() {
 
@@ -84,28 +89,27 @@ async function initializeApp() {
 };
 
 
+//Carga el contenido al visualizador de la indormacion del hotspot
 
 function cargaContenidoTexto(TextosData) {
 
     if (TextosData && TextosData.text_content && TextosData.text_content.length > 0){
             
-                document.getElementById('text_title').innerHTML = TextosData.text_content[0].name;
-                document.getElementById('text_author').innerHTML = TextosData.text_content[0].author;
-                document.getElementById('text_content').innerHTML = TextosData.text_content[0].content.replace(/\n/g, '<br>');
-
-            //text_popup.classList.add('mostrar-mp3');
+                document.getElementById('soma-text_title').innerHTML = TextosData.text_content[0].name;
+                document.getElementById('soma-text_author').innerHTML = TextosData.text_content[0].author;
+                document.getElementById('soma-text_content').innerHTML = TextosData.text_content[0].content.replace(/\n/g, '<br>');
   
         }
 };
 
 
-
+// Si el popover está activo Y el click fue fuera del popover y fuera de un trigger
 
 document.addEventListener('click', (e) => {
-    // Si el popover está activo Y el click fue fuera del popover y fuera de un trigger
+    
 
-    if (text_popup.classList.contains('mostrar') && !pop_cont.contains(e.target))  {
-        text_popup.classList.remove('mostrar');
+    if (text_popup.classList.contains('mostrar-pop-soma') && !pop_cont.contains(e.target))  {
+        text_popup.classList.remove('mostrar-pop-soma');
 
         TextosData = null;
     }

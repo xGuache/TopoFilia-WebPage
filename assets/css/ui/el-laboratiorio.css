@@ -1,4 +1,4 @@
-.Container{
+.lab-container{
     height: 100%;
     width: 100%;
     display: grid;
@@ -16,25 +16,25 @@
 
 
 @media (max-width: 768px){
-    .Container{
+    .lab-container{
         grid-template-rows: 15vh auto 1fr;
     }
 }
 
-.Container header{
+.lab-container header{
     grid-area: header;
     background: rgb(0, 0, 0);
     top:0;
 }
 
-.Container main{
+.lab-container main{
     grid-area: main;
     background: rgb(255, 255, 255);
    
 
 }
 
-.Container footer{
+.lab-container footer{
     grid-area: footer;
     background: rgb(255, 255, 255);
     padding: 10px;
@@ -44,7 +44,7 @@
 
 /*/////////////////////////////////////////////////////////////////////////////////*/
 
-.Container-Info{
+.lab-container-info{
 
     background: white;
      
@@ -52,17 +52,17 @@
 
 
 
-#El-Laboratorio{
+#el-laboratorio{
     scroll-margin-top: 120px; /*evita que el navbar cubra la seccion*/
 }
 
-.Main-Info{
+.main-Info{
     margin: 3%;
     padding: 3%;
     
 }
 
-.Secondary-Info{
+.secondary-info{
     align-content: center;
     justify-content: center;
     background-color: rgb(229, 73, 0);
@@ -70,7 +70,7 @@
 }
 
 
-.Container-Cards{
+.lab-container-cards{
 
     margin-left: 5%;
     margin-right: 5%;
@@ -82,7 +82,7 @@
 }
 
 
-.Cards-grid{
+.lab-container-cards .cards-grid{
     justify-content: center;
      display: grid;
      grid-template-columns: repeat(
@@ -96,12 +96,12 @@
 }
 
 @media (width>768px) {
-    .Cards-grid{grid-template-columns: repeat(
+    .lab-container-cards .cards-grid{grid-template-columns: repeat(
         auto-fit,
         minmax(320px,1fr)
      )
     }
-     .Cards-grid .cards-item{
+     .lab-container-cards .cards-grid .cards-item{
         min-height: 520px;
         padding: 30px;
      }
@@ -109,7 +109,7 @@
 }
 
 
-.cards-item{
+.lab-container-cards .cards-item{
 
     box-sizing: border-box;
     
@@ -133,7 +133,7 @@
 
 
 
-.cards-item img{
+.lab-container-cards .cards-item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -141,7 +141,7 @@
     flex-grow: 2;
 }
 
-.cards-item h4{
+.lab-container-cards .cards-item h4{
     align-content: center;
     margin: 10px;
     padding:0;
@@ -149,7 +149,7 @@
     flex-grow: 1;
 }
 
-.cards-item button{
+.lab-container-cards .cards-item button{
     height: 15%;
     width: 100%;
     border-radius: 10px;
@@ -167,7 +167,7 @@
    
 }
 
-.cards-item button:hover{
+.lab-container-cards .cards-item button:hover{
    background-color: rgb(175, 89, 3);
    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.6);
    transform: translateY(-3px);
@@ -194,7 +194,7 @@
     
 }
 
-.Container-footer-logo{
+.container-footer-logo{
 
     display: flex;
 
@@ -210,7 +210,7 @@
     min-width: 40%;
 }
 
-.Container-footer-logo img{
+.container-footer-logo img{
 
     max-width: 100%;
     object-fit: contain;
