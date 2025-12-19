@@ -1,13 +1,14 @@
-# TopoFilia – WebPage
+# Artefactum Oralitura
 
 ## Descripción general
 
-**TopoFilia – WebPage** es una **página web estática e interactiva** cuyo objetivo es presentar una **infografía digital sobre la oralitura del Sumapaz**, a partir de murales realizados en el territorio por el grupo de trabajo **"El Laboratorio"**.
+**Artefactum Oralitura** es una **página web estática e interactiva** cuyo objetivo es presentar una **infografía digital sobre la oralitura del Sumapaz**, a partir de murales realizados en el territorio por el grupo de trabajo **"El Laboratorio"**.
 
-El proyecto utiliza murales interactivos como medio narrativo. Al hacer clic sobre distintos elementos visuales, el usuario accede a información oral y escrita que profundiza en la memoria, el territorio y la cultura sumapaceña.
+El proyecto utiliza murales interactivos como medio narrativo. Al hacer clic sobre distintos elementos visuales, el usuario accede a información oral y escrita que profundiza sobre la oralitura de la cultura sumapaceña.
 
 El sitio está desarrollado sin frameworks, usando únicamente **HTML, CSS y JavaScript Vanilla**, organizados en múltiples archivos según su funcionalidad para mantener el proyecto modular y escalable.
 
+https://artefactumoralitura.netlify.app/
 ---
 
 ## Estructura del proyecto
@@ -181,7 +182,6 @@ Todos los recursos están organizados dentro de `assets/media/`.
 // Manejo de interacción en elementos del mural
 document.querySelectorAll('.mural-item').forEach(item => {
   item.addEventListener('click', () => {
-    // mostrar info o reproducir audio
   });
 });
 ```
@@ -219,16 +219,18 @@ document.querySelectorAll('.mural-item').forEach(item => {
 
 ## Mantenimiento del proyecto
 
+1. Mantenimiento del codigo
+
 * Requisitios: 
   - Visual Studio Code (https://code.visualstudio.com/download)
     |- Local Live Server o Visual Studio Live Server (https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
   - terminal git (https://git-scm.com/install/) - 
   - Navegador web
 
-1. Acceder a github con las credenciales asignadas https://github.com/artefactum-oralitura/oralitura 
+* Acceder a github con las credenciales asignadas https://github.com/artefactum-oralitura/oralitura 
       usuario: artefactum-oralitura | contraseña:******
 
-2. Clonar repositiorio de github url:
+* Clonar repositiorio de github url:
       - Ir al perfil del repositiorio oralitura
       - Dar clic en el boton <code> copiar la url 
       - Abrir la terminal cmd o git - ejecutar los siguientes comandos.
@@ -240,9 +242,9 @@ document.querySelectorAll('.mural-item').forEach(item => {
       - Clonar el repositorio 
       -     git clone https://github.com/artefactum-oralitura/oralitura.git
 
-2. Abrir la carpeta donde se clono el repositorio con visual studio code
-3. Realizar los cambios requeriods
-4. Abrir la terminal git del projecto y ejecutar los siguientes comandos.
+* Abrir la carpeta donde se clono el repositorio con visual studio code
+* Realizar los cambios requeridos
+* Abrir la terminal git del projecto y ejecutar los siguientes comandos.
      - Agregar archivos adicionales
      - git add . 
      - Comentar la descripcion concreta cambios realizados
@@ -250,6 +252,14 @@ document.querySelectorAll('.mural-item').forEach(item => {
      - Actualizar el repositorio 
      - git push
 ---
+
+2. Mantenimiento del servidor en Netlify.app
+
+* Acceder al proyecto.
+   - Acceder con las credenciales a la pagina web del servidor https://app.netlify.com/
+   - Ir al apartado de Proyectos 
+   - Abrir el proyecto artefactumoralitura
+   - Navegar entre las opciones del proyecto para configuracion del mismo
 
 ## Historial de versiones
 
