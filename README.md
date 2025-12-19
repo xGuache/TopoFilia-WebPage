@@ -228,7 +228,7 @@ document.querySelectorAll('.mural-item').forEach(item => {
 1. Acceder a github con las credenciales asignadas https://github.com/artefactum-oralitura/oralitura 
       usuario: artefactum-oralitura | contraseña:******
 
-2. *  Clonar repositiorio de github url:
+2. Clonar repositiorio de github url:
       - Ir al perfil del repositiorio oralitura
       - Dar clic en el boton <code> copiar la url 
       - Abrir la terminal cmd o git - ejecutar los siguientes comandos.
@@ -241,7 +241,14 @@ document.querySelectorAll('.mural-item').forEach(item => {
       -     git clone https://github.com/artefactum-oralitura/oralitura.git
 
 2. Abrir la carpeta donde se clono el repositorio con visual studio code
-
+3. Realizar los cambios requeriods
+4. Abrir la terminal git del projecto y ejecutar los siguientes comandos.
+     - Agregar archivos adicionales
+     - git add . 
+     - Comentar la descripcion concreta cambios realizados
+     - git commit -m "comentario"
+     - Actualizar el repositorio 
+     - git push
 ---
 
 ## Historial de versiones
